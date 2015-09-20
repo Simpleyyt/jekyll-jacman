@@ -1,41 +1,14 @@
 ---
 layout: post
 title: 如何使用 Jacman 主题
-date: 2014-11-20 09:58:17
 tags:
-- Hexo
+- Jekyll
 - Jacman
-categories: Hexo
-description: Jacman 是一款扁平化，有着响应式设计的 Hexo 主题。本站正式使用了 Jacman 主题。Jacman 基于 Pacman 主题修改而来，而今已有很多特性与原主题不同。你可以前往本站和 Demo 预览更多关于本主题的更多效果。如果你有任何问题或意见欢迎到 GitHub 发表 issue。
+categories: Jekyll
+description: Jacman 是一款扁平化，有着响应式设计的 Jekyll 主题。本站正式使用了 Jacman 主题。Jacman 基于 Jacman 的 Hexo 主题修改而来。你可以前往本站和 Demo 预览更多关于本主题的更多效果。如果你有任何问题或意见欢迎到 GitHub 发表 issue。
 ---
 ##主题介绍
-[Jacman](https://github.com/wuchong/jacman) 是一款扁平化，有着响应式设计的 [Hexo](http://http://hexo.io/) 主题。本站正式使用了 Jacman 主题。Jacman 基于 [Pacman](https://github.com/A-limon/pacman) 主题修改而来，目前已有很多特性与原主题不同。你可以前往 [本站](http://wuchong.me) 和 [Demo](http://wuchong.me/jacman) 预览更多关于本主题的更多效果。如果你有任何问题或意见欢迎到 GitHub 发表 [issue](https://github.com/wuchong/jacman/issues)。
-
-距离当初我把 Jacman 开源至今已有半年零一周了，在这半年里也一直保持着对 Jacman 的更新。看到很多人用这款主题，fork&star 数也越来越好看，我也更有动力继续完善 Jacman。Jacman 自然还有很多改进空间，首先是文档问题，有许多人通过博客、微博、QQ 询问我有关主题的问题，我也意识到之前写的帮助手册可读性太差。正好趁着这次 Jacman 大更新，写篇更详尽、readable 的手册。
-
-##安装指南
-###安装
-在博客根目录下执行如下命令。
-```
-$ git clone https://github.com/wuchong/jacman.git themes/jacman
-```
-Jacman 需要安装 Hexo 2.7 及以上版本，请先升级您的 Hexo 程序，再启用此主题。
-
-###启用
-
-修改你的博客根目录下的`_config.yml`配置文件中的`theme`属性，将其设置为`jacman`。同时建议设置`stylus`属性中的`compress`值为true，会自动压缩 CSS 文件，hexo默认配置中不包含这一项，建议开启。如下。
-```
-theme: jacman
-stylus:
-  compress: true
-```
-
-###更新
-```
-cd themes/jacman
-git pull origin master
-```
-请先备份您主题目录下的 `_config.yml` 文件后再升级。
+Jekyll-Jacman 是为 [Jekyll](http://jekyllrb.com) 设计的一款清新且具有响应式的主题，拥有更丰富的特性并支持了很多的国内服务。Jacman 始于 [Jacman](https://github.com/wuchong/jacman) 移植而来。
 
 <!-- more -->
 ##配置指南
@@ -68,10 +41,6 @@ apple_icon: img/jacman.jpg   ## 苹果设备上的图标，背景不要透明
 author_img: img/author.jpg   ## 网站底部的博主头像
 banner_img: img/banner.jpg   ## 博客顶部的图片
 
-### 主题颜色
-theme_color:
-    theme: '#2ca6cb'    ##默认主题颜色为蓝色
-
 close_aside: false      ##是否在文章页面自动关闭侧边栏
 
 #### 首页相关
@@ -81,6 +50,7 @@ index:
 
 #### 作者信息
 author:
+  name: ## 作者名
   intro_line1:  "Hello ,I'm Larry Page in Google."    ## 网站底部的个人介绍
   intro_line2:  "This is my blog,believe it or not."  
   weibo_verifier:  ## 微博秀的验证码
@@ -161,7 +131,7 @@ title: tags (或categories)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;因为主题中已经内置了这两个页面的模板，所以他们会被正确的解析出来。
 
 - **控件 widgets**
-提供了7种小工具。包括标签、标签云、分类、归档、RSS、友情链接、微博秀。
+提供了7种小工具。包括标签、分类、RSS、友情链接、微博秀。
 
  **友情链接**：友情链接的网址添加可以在`links`属性下添加。
  
@@ -183,7 +153,7 @@ title: tags (或categories)
 ![](http://ww4.sinaimg.cn/large/81b78497jw1emgscr3575j2078050jrc.jpg)
 
 - **目录 toc**
-是否启用在文章中或侧边栏中的目录功能。二者可以都为`true`或都为`false`。同时，如果你希望在特定的某一篇文章中关闭目录功能你可以在文章文件开头中的`front-matter`中加上一行`toc: false`。如果希望在某一篇文章中关闭目录自动编号功能你可以在文章文件开头的`front-matter`中加上一行`list_number: false`。另外 hexo 2.5.2 开始支持中文目录，想获得更好的体验请升级你的 Hexo 版本。
+是否启用在文章中或侧边栏中的目录功能。二者可以都为`true`或都为`false`。同时，如果你希望在特定的某一篇文章中关闭目录功能你可以在文章文件开头中的`front-matter`中加上一行`toc: false`。
 
 - **评论 comments**
 填写`duoshuo_shortname`[多说](http://duoshuo.com/)的用户名，启用多说评论系统。在大陆地区更好用的评论系统。
@@ -205,13 +175,10 @@ title: tags (或categories)
 主题支持写 LaTex 数学公式。只需要在文章文件开头的`front-matter`中，加上一行`mathjax: true`，即可在文中写 LaTex 公式。
 
 - **图片浏览 fancybox**
-默认关闭，如果你使用 Hexo 经常发表 Gallery 类型的文章，那么请设置为`true`。
+默认关闭，如果你经常发表 Gallery 类型的文章，那么请设置为`true`。
 
 - **返回顶部 totop**
 右下角`返回顶部`按钮，默认开启。
-
-- **自定义字体 ShowCustomFont**
-是否启用自定义字体，默认开启，主要用于显示网站底部的字体。如果你有一定前端基础可以修改 font.styl 替换为你喜欢的字体。
 
 - **自定义搜索 Search**
 `baidu_search`：如果开启百度站内搜索需要登录 [百度站内搜索](http://zn.baidu.com/)，配置好你的站点，并开启站内搜索获取搜索ID，另外`site`属性可以填默认值，也可以填自己做了CNAME的二级域名，更详细的可以阅读[这篇博客](http://gengbiao.me/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%99%BE%E5%BA%A6%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/)了解。
@@ -224,24 +191,6 @@ title: tags (或categories)
  ```
 
  `tiny_search`: 如果要开启[微搜索](http://tinysou.com/)，需要先注册一个帐号，配置一个Engine，将Engine的Key填入配置文件中的`id`即可。
- 
-- **主题颜色更改 Theme Color**
-
-目前官方还未支持十六进制颜色与String值的转换，所以需要手动添加依赖包，该问题估计不久后会解决。
-
-```
-##在博客的目录下输入下面指令
-cd node_modules/hexo-renderer-stylus 
-sudo npm install stylus@0.49.2  #根据系统文件的权限不同，有的不需要加sudo
-```
-
-然后更改在主题目录下的`_config.yml`的 `theme_color` 下 `theme` 值。
-```
-### Theme Color 
-theme_color:
-    theme: '#2ca6cb'    ##the defaut theme color is blue
-```
-
 
 
 ##常见问题
@@ -249,7 +198,7 @@ theme_color:
 >使用 `<img src="" style="display:block;margin:auto"/>`的HTML标签。
 
 - **Q：如何建立一篇图片类文章（Gallery Post）？**
-> 使用`hexo new photo "your titile"`建立图片类文章，或者直接新建一个 Markdown 文件，将其`front-matter`修改为如下，即可看到主题为图片类文章提供的样式，[Demo](http://wuchong.me/jacman/gallery)。
+> 直接新建一个 Markdown 文件，将其`front-matter`修改为如下，即可看到主题为图片类文章提供的样式。
 ```
 ---
 layout: photo
@@ -263,26 +212,11 @@ photos:
 - **Q：我在配置文件中给某一项设置了值，但为什么总是看不到效果啊？**
 >`_config.yml`文件中的每个属性值前面必须留一个空格，建议在 Sublime/Notepad++ 中开启显示所有空格模式。另每篇文章的 `front-matter` 也要注意这个问题。
 
-- **Q：如何建立自我介绍页面（About 页面）？**
->首先在主目录找到`_config.yml`，找到url添加`about_dir: about`到这个板块。然后在`/source`里面建立about文件夹。在about文件夹里建立index.md。编辑index.md就和发布其他的文章一样，格式都一样。
-
 - **Q：怎么提意见和建议？**
->主题还在不断完善中，欢迎 [open issue](https://github.com/wuchong/jacman/issues) 来提建议，参与讨论。
-
-- **Q：楼主我不喜欢你的配色，怎么换主题的颜色呢？**
->包括颜色在内的很多变量都在`jacman/source/css/_base/variable.styl`文件中，可以修改成你喜欢的。
-
-- **Q：英语更能突显我的逼格，怎么换成英语？**
->配置你的博客根目录下的`_config.yml`，去掉`language: zh-CN`。
+>主题还在不断完善中，欢迎 [open issue](https://github.com/Simpleyyt/jekyll-jacman/issues) 来提建议，参与讨论。
 
 - **Q：为什么我修改了配置文件/发表了博文，解析出来的却是乱码呢？ **
 > 请将你的配置文件/markdown文件保存成 `UTF-8` 格式。
 
 - **Q：为什么开启了微博秀后，显示是空白的，没有内容展示？ **
 > 每次修改参数都会这样，需要多刷新几次或者上传到服务器上就好了。
-
-- **Q：博主 Jacman Demo 站点中文章的 md 源文件在哪能看到呢？ **
-> 我将 Demo 站点所有源文件放在了 Jacman 的 [site](https://github.com/wuchong/jacman/tree/site) 分支下。
-
-
-*PS:有任何关于 Hexo 的问题，欢迎来 [Hexo 中文社区](https://coderq.com/c/tech/hexo) 咨询。*
