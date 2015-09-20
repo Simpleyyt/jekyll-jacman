@@ -1,0 +1,107 @@
+<!--
+<%
+var title = '';
+var icon = '';
+if (page.category){
+  title = page.category;
+  icon = 'category';
+};
+if (page.tag){
+  title = page.tag;
+  icon = 'tag';
+};
+if (page.archive){
+  icon = 'archive';
+  if (page.year) title = page.year+  (page.month ? '/' + page.month : '');
+  else title = __('archive_a');
+};
+%>
+-->
+
+{% if page.type == 'archives' %}
+{% assign title = '归档' %}
+{% assign icon = 'archive' %}
+{% endif %}
+
+{% if page.type == 'categories' %}
+{% assign title = '分类' %}
+{% assign icon = 'category' %}
+{% endif %}
+
+{% if page.type == 'tags' %}
+{% assign title = '标签' %}
+{% assign icon = 'tag' %}
+{% endif %}
+
+<div class="archive-title" >
+  <h2 class="{{ icon }}-icon"><span class='archive-folder'>{{ title }}</span></h2>
+  {% if page.type == 'archives' %}
+  <div class="archiveslist archive-float clearfix">
+    {% for post in site.posts  %}
+    {% capture this_date %}{{ post.date }}{% endcapture %}
+    {% capture next_date %}{{ post.previous.date }}{% endcapture %}
+    {% if this_date != next_date %}
+    
+    <ul class="archive-list">
+    <li class="archive-list-item">
+    <a class="archive-list-link" href="#{{ this_date | date: "%Y-%m" }}">{{ this_date | date: "%Y 年 %m 月" }}</a>
+    {% capture count %}{% increment count %}{% endcapture %}
+    {% capture count %}{% increment count %}{% endcapture %}
+    <span class="archive-list-count">{{ count }}</span>
+    {% else %}
+    {% capture count %}{% increment count %}{% endcapture %}
+    {% endif %}
+        
+    </li>
+    {% endfor %}
+    </ul>
+ </div>
+  {% endif %}
+  {% if page.type == 'categories' %}
+  
+  <ul class="archive-list">
+  <div class="archiveslist archive-float clearfix">
+    {% for category in site.categories  %}
+    <li class="archive-list-item">
+    <a class="archive-list-link" href="#{{ category[0] }}">{{ category[0] }}</a>
+    <span class="archive-list-count">{{ category[1] | size }}</span>
+    </li>
+    {% endfor %}
+ </div>
+ </ul>
+ {% endif %}
+ 
+  {% if page.type == 'tags' %}
+  
+  <ul class="archive-list">
+  <div class="archiveslist archive-float clearfix">
+    {% for tag in site.tags  %}
+    <li class="archive-list-item">
+    <a class="archive-list-link" href="#{{ tag[0] }}">{{ tag[0] }}</a>
+    <span class="archive-list-count">{{ tag[1] | size }}</span>
+    </li>
+    {% endfor %}
+ </div>
+ </ul>
+ {% endif %}
+ 
+</div>
+<div id="main" class="archive-part clearfix">
+  <div id="archive-page">
+  {% for post in site.posts %}
+  {% assign item = post %}
+  {% assign index = true %}
+  {% include _partial/article_row.html %}
+  {% endfor %}
+<!--
+<% if (page.total > 1){ %>
+  <nav id="page-nav" class="clearfix archive-nav">
+    <%- paginator({
+      prev_text: '<span></span>Prev',
+      next_text: 'Next<span></span>'
+    }) %>
+  </nav>
+<% } %>
+-->
+  </div>
+</div>

@@ -1,0 +1,72 @@
+{% if page.type == 'post' or page.type == 'photo' %}
+ {% include _partial/head.html %}
+  <body>
+    <header>
+        {% include _partial/header.html %}
+    </header>
+    <div id="container">
+      {{ content }}
+      {% assign item = page %}
+      {% assign table = true %}
+      {% include _partial/sidebar.html %}
+    </div>
+    <footer>{% include _partial/footer.html %}</footer>
+    {% include _partial/after_footer.html %}
+  </body>
+</html>
+{% elsif page.type == 'page' %}
+    {% include _partial/head.html %}
+      <body>
+        <header>
+          {% include _partial/header.html %}
+        </header>
+        <div id="container">
+          {{ content }}
+        </div>
+        <footer>{% include _partial/footer.html %}</footer>
+        {% include _partial/after_footer.html %}
+      </body>
+     </html>
+{% elsif page.type == 'search' %}
+{% include _partial/head.html %}
+    <body>
+      <header>
+        {% include _partial/header.html %}
+      </header>
+      <div id="container">
+      {% include _partial/search.html %}
+      </div>
+      <footer>{% include _partial/footer.html %}</footer>
+      {% include _partial/after_footer.html %}
+    </body>
+   </html>
+{% elsif page.type == 'categories' or page.type == 'tags' or page.type == 'archives' %}
+  {% include _partial/head.html %}
+    <body>
+      <header>
+        {% include _partial/header.html %}
+      </header>
+      <div id="container">
+        {{ content }}
+      </div>
+      <footer>{% include _partial/footer.html %}</footer>
+      {% include _partial/after_footer.html %}
+    </body>
+   </html>
+{% else %}
+        {% include _partial/head.html %}
+  <body>
+    <header>
+        {% include _partial/header.html %}
+    </header>
+    <div id="container">
+      {{ content }}
+      {% assign item = page %}
+      {% assign table = false %}
+      {% include _partial/sidebar.html %}
+    </div>
+    <footer>{% include _partial/footer.html %}</footer>
+    {% include _partial/after_footer.html %}
+  </body>
+ </html>
+{% endif %}
