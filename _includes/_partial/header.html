@@ -14,7 +14,7 @@
 				<ul>
 					<ul>
 					 {% for m in site.menu %}
-						<li><a href="{{ m[1] }}">{{ m[0] }}</a></li>
+						<li><a href="{{ site.baseurl }}{{ m[1] }}">{{ m[0] }}</a></li>
 					{% endfor %}
 					<li>
  					{% if site.google_cse.enable %}

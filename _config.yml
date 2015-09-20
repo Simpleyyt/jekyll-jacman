@@ -5,8 +5,8 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
-assets: http://simpleyyt.github.io/jekyll-jacman/assets
-baseurl: http://simpleyyt.github.io/jekyll-jacman
+assets: /assets
+baseurl: 
 
 # pagination
 paginate: 20
