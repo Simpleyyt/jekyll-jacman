@@ -37,19 +37,20 @@ if (page.archive){
   <h2 class="{{ icon }}-icon"><span class='archive-folder'>{{ title }}</span></h2>
   {% if page.type == 'archives' %}
   <div class="archiveslist archive-float clearfix">
+    {% assign count = 1 %}
     {% for post in site.posts  %}
     {% capture this_date %}{{ post.date }}{% endcapture %}
     {% capture next_date %}{{ post.previous.date }}{% endcapture %}
-    {% if this_date | date: "%Y-%m" != next_date | date: "%Y-%m" %}
-    
+    {% capture this_date_str %}{{ this_date | date: "%Y-%m" }}{% endcapture %}
+    {% capture next_date_str %}{{ next_date | date: "%Y-%m" }}{% endcapture %}
+    {% if this_date_str != next_date_str %}
     <ul class="archive-list">
     <li class="archive-list-item">
     <a class="archive-list-link" href="#{{ this_date | date: "%Y-%m" }}">{{ this_date | date: "%Y 年 %m 月" }}</a>
-    {% capture count %}{% increment count %}{% endcapture %}
-    {% capture count %}{% increment count %}{% endcapture %}
     <span class="archive-list-count">{{ count }}</span>
+    {% assign count = 1 %}
     {% else %}
-    {% capture count %}{% increment count %}{% endcapture %}
+    {% assign count = 1 | plus: 1 %}
     {% endif %}
         
     </li>
