@@ -40,7 +40,7 @@ if (page.archive){
     {% for post in site.posts  %}
     {% capture this_date %}{{ post.date }}{% endcapture %}
     {% capture next_date %}{{ post.previous.date }}{% endcapture %}
-    {% if this_date != next_date %}
+    {% if this_date | date: "%Y-%m" != next_date | date: "%Y-%m" %}
     
     <ul class="archive-list">
     <li class="archive-list-item">
