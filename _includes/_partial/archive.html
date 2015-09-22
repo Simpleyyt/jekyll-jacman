@@ -50,7 +50,7 @@ if (page.archive){
     <span class="archive-list-count">{{ count }}</span>
     {% assign count = 1 %}
     {% else %}
-    {% assign count = 1 | plus: 1 %}
+    {% assign count = count | plus: 1 %}
     {% endif %}
         
     </li>
