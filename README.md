@@ -4,7 +4,7 @@ Jekyll-Jacman 是为 [Jekyll](http://jekyllrb.com) 设计的一款清新且具�
 
 [主题演示](http://simpleyyt.github.io/jekyll-jacman/) | [Yitao's Blog](http://simpleyyt.github.io)
 
-[如何使用 Jacman 主题](http://simpleyyt.github.io/jekyll-jacman/jekyll/2014/11/20/how-to-use-jacman/)
+[如何使用 Jacman 主题](http://simpleyyt.github.io/jekyll-jacman/jekyll/2015/09/20/how-to-use-jacman/)
 
 ##功能
 - **菜单 menu**  
