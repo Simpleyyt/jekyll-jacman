@@ -27,6 +27,13 @@ redcarpet:
 title : Jekyll Jacman
 tagline: A fresh looking and responsive theme for Jekyll
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      type: "post"
 
 ##### Menu
 menu:
