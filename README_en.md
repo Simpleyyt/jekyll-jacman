@@ -4,8 +4,6 @@
 
 Jacman is a fresh looking and responsive theme for [Jekyll](http://jekyllrb.com) with more features and some build-in Chinese service based on [Hexo Jacman](https://github.com/wuchong/jacman).  
 
-**Jacman support Hexo 3.0 now !**
-
 [Demo](http://simpleyyt.github.io/jekyll-jacman/)
 
 [Yitao's Blog](http://simpleyyt.github.io)
