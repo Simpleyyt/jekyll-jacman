@@ -20,22 +20,22 @@
  					{% if site.google_cse.enable %}
 					<form class="search" action="{{ site.baseurl }}/search/" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="{{ lang.search }}" />
 					</form>
 					{% elsif site.baidu_search.enable %}
 						<form class="search" action="{{ site.baidu_search.site }}" target="_blank">
 							<label>Search</label>
-						<input name="s" type="hidden" value= {{ site.baidu_search.id }} ><input type="text" name="q" size="30" placeholder="搜索"><br>
+						<input name="s" type="hidden" value= {{ site.baidu_search.id }} ><input type="text" name="q" size="30" placeholder="{{ lang.search }}"><br>
 						</form>
 					{% elsif site.tinysou_search.enable %}
 						<form class="search">
 							<label>Search</label>
-						<input type="text" id="ts-search-input" name="q" size="30" placeholder="搜索"><br>
+						<input type="text" id="ts-search-input" name="q" size="30" placeholder="{{ lang.search }}"><br>
 						</form>
 					{% else %}
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="{{ lang.search }}" />
 						<input type="hidden" name="q" value="site:{{ site.baseurl | replace: 'http://', '' | replace: 'https://', '' }}">
 					</form>
 					{% endif %}
