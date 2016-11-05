@@ -20,7 +20,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      type: "post"
+      layout: "post"
       
 #### Pagination
 paginate: 20
@@ -74,7 +74,7 @@ index:
   excerpt_link: Read More  
 
 close_aside: false  #close sidebar in post page if true
-mathjax: false      #enable mathjax if true
+mathjax: true      #enable mathjax if true
 
 #### Author information
 author:
@@ -152,3 +152,6 @@ baidu_search:     ## http://zn.baidu.com/
 tinysou_search:     ## http://tinysou.com/
   enable: false
   id:  ## e.g. "4ac092ad8d749fdc6293" for your tiny search id
+
+gems:
+ - jemoji

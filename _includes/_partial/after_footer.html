@@ -35,7 +35,7 @@ $(document).ready(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
   });
   
-  {% if page.type == 'post' and site.close_aside %}
+  {% if page.layout == 'post' and site.close_aside %}
         getSize();
         if (myWidth >= 1024) {
           c.click();
@@ -51,7 +51,7 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
-      {% if page.type == 'post' and page.toc != false and site.toc.aside %}
+      {% if page.layout == 'post' and page.toc != false and site.toc.aside %}
       $('#toc.toc-aside').css('display', 'none');
       {% endif %}
     }
@@ -59,7 +59,7 @@ $(document).ready(function(){
 });
 </script>
 
-{% if page.type == 'post' %}
+{% if page.layout == 'post' %}
 <script type="text/javascript">
 $(document).ready(function(){ 
   $('#toc.toc-aside').toc({
@@ -75,7 +75,7 @@ $(document).ready(function(){
 </script>
 {% endif %}
 
-{% if page.type == 'post' %}
+{% if page.layout == 'post' %}
 <script type="text/javascript">
 $(document).ready(function(){ 
   var ai = $('.article-content>iframe'),
@@ -103,7 +103,7 @@ $(document).ready(function(){
 </script>
 {% endif %}
 
-{% if (page.type == 'post' or page.type == 'page' or page.type == 'photo') and !site.jiathis.enable  %}
+{% if (page.layout == 'post' or page.layout == 'page' or page.layout == 'photo') and !site.jiathis.enable  %}
 <script type="text/javascript">
 $(document).ready(function(){ 
   var $this = $('.share'),
@@ -198,7 +198,7 @@ var disqus_shortname = '{{ site.disqus_shortname }}';
 {% endif %}
 
 <!--
-{% if page.type == 'tags' or page.type == 'categories' %}
+{% if page.layout == 'tags' or page.layout == 'categories' %}
 <script type="text/javascript">
 $(document).ready(function(){ 
   var list    = $('.archive-title a'),
@@ -219,7 +219,7 @@ $(document).ready(function(){
 {% endif %}
 -->
 
-{% if page.type == 'archives' or page.type == 'categories' or page.type == 'tags' %}
+{% if page.layout == 'archives' or page.layout == 'categories' or page.layout == 'tags' %}
 <script type="text/javascript">
 $(document).ready(function(){
     var show_post = function(anchor) {

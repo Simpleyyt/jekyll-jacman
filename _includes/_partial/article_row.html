@@ -1,8 +1,8 @@
-{% if page.type == 'archives' %}
+{% if page.layout == 'archives' %}
 <section class="post {{ item.date | date: "%Y-%m" }}" itemscope itemprop="blogPost">
-{% elsif page.type == 'categories' %}
+{% elsif page.layout == 'categories' %}
 <section class="post {% for category in item.categories %}{{ category }} {% endfor %}" itemscope itemprop="blogPost">
-{% elsif page.type == 'tags' %}
+{% elsif page.layout == 'tags' %}
 <section class="post {% for tag in item.tags %}{{ tag }} {% endfor %}" itemscope itemprop="blogPost">
 {% else %}
 <section class="post" itemscope itemprop="blogPost">
