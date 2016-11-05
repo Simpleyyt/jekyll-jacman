@@ -27,7 +27,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      type: "post"
+      layout: "post"
       
 #### Pagination
 paginate: 20
@@ -81,7 +81,7 @@ index:
   excerpt_link: Read More  
 
 close_aside: false  #close sidebar in post page if true
-mathjax: false      #enable mathjax if true
+mathjax: true      #enable mathjax if true
 
 #### Author information
 author:

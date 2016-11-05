@@ -1,5 +1,5 @@
 {% if site.index.expand == true %}
-    {% if page.type == 'photo' and item.photos and item.photos | size != 0 %}
+    {% if page.layout == 'photo' and item.photos and item.photos | size != 0 %}
 	    {% include _partial/post/gallery.html %}
     {% endif %}
     <article class="post-expand {{ item.layout }}" itemprop="articleBody"> 
