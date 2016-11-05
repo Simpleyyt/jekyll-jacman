@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
     {% assign title = page.title %}
     {% if page.type == 'archives' %}
-    {% assign title = '归档' %}
+    {% assign title = lang.archive_a %}
     {% endif %}
     {% if page.type == 'categories' %}
-    {% assign title = '分类' %}
+    {% assign title = lang.categories %}
     {% endif %}
     {% if page.type == 'tags' %}
-    {% assign title = '标签' %}
+    {% assign title = lang.tags %}
     {% endif %}
     <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
     

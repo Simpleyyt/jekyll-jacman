@@ -1,17 +1,14 @@
-# This is the default format. 
+#### Exclude
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+
+#### Code Highlighter
+highlighter: pygments
+
+#### Permalink
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
-
-assets: /assets
-baseurl: 
-
-# pagination
-paginate: 20
-
-# Markdown Processors
+#### Markdown Processors
 markdown: redcarpet
 redcarpet:
   extensions:
@@ -22,11 +19,8 @@ redcarpet:
     - tables
     - lax_spacing
     - with_toc_data
-    
 
-title : Jekyll Jacman
-tagline: A fresh looking and responsive theme for Jekyll
-
+#### Default Attributes
 defaults:
   -
     scope:
@@ -34,8 +28,20 @@ defaults:
       type: "posts"
     values:
       type: "post"
+      
+#### Pagination
+paginate: 20
 
-##### Menu
+#### Site
+title : Jekyll Jacman
+tagline: A fresh looking and responsive theme for Jekyll
+assets: /assets
+baseurl: 
+
+#### Language
+language: zh-CN    ## blog site languages: en, zh-CN, zh-TW
+
+#### Menu
 menu:
   Home: /
   Archives: /archives
@@ -108,8 +114,6 @@ links:
   码农圈: https://coderq.com
   Jark's Blog: http://wuchong.me
 
-
-
 #### Comment
 duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
 disqus_shortname:     ## e.g. wuchong   your disqus short name.
@@ -138,7 +142,6 @@ cnzz_tongji:
 fancybox: true        ## if you use gallery post or want use fancybox please set the value to true.
 totop: true           ## if you want to scroll to top in every post set the value to true
 
-
 #### Custom Search
 google_cse: 
   enable: false
@@ -153,7 +156,6 @@ baidu_search:     ## http://zn.baidu.com/
   enable: false
   id:   ## e.g. "783281470518440642"  for your baidu search id
   site: http://zhannei.baidu.com/cse/search  ## your can change to your site instead of the default site
-  
 tinysou_search:     ## http://tinysou.com/
   enable: false
   id:  ## e.g. "4ac092ad8d749fdc6293" for your tiny search id

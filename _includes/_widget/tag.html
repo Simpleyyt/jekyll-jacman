@@ -1,6 +1,6 @@
 {% if site.tags | size != 0 %}
 <div class="tagslist">
-	<p class="asidetitle">标签</p>
+	<p class="asidetitle">{{ lang.tags }}</p>
 		<ul class="clearfix">
 		{% for item in site.tags %}
 			{% if item[1] | size != 0 %}
