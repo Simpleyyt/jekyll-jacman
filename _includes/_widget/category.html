@@ -1,6 +1,6 @@
 {% if site.categories | size != 0 %}
 <div class="categorieslist">
-	<p class="asidetitle">分类</p>
+	<p class="asidetitle">{{ lang.categories }}</p>
 		<ul>
 		{% for item in site.categories %}
 		  {% if item[1] | size != 0 %}

@@ -6,7 +6,7 @@
 	{% include _partial/post/header.html %}
 	<div class="article-content">
 		{% if table and site.toc.article %}
-		<div id="toc" class="toc-article toc-content">
+		<div id="toc" class="toc-article toc-content" style="display: none;">
 		{% if item.list_number == false %}
 		<!--<%- toc(item.content,{list_number:false}) %>-->
 		{% else %}

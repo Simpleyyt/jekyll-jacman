@@ -19,17 +19,17 @@ if (page.archive){
 -->
 
 {% if page.type == 'archives' %}
-{% assign title = '归档' %}
+{% assign title = lang.archive_a %}
 {% assign icon = 'archive' %}
 {% endif %}
 
 {% if page.type == 'categories' %}
-{% assign title = '分类' %}
+{% assign title = lang.categories %}
 {% assign icon = 'category' %}
 {% endif %}
 
 {% if page.type == 'tags' %}
-{% assign title = '标签' %}
+{% assign title = lang.tags %}
 {% assign icon = 'tag' %}
 {% endif %}
 
@@ -46,7 +46,7 @@ if (page.archive){
     {% if this_date_str != next_date_str %}
     <ul class="archive-list">
     <li class="archive-list-item">
-    <a class="archive-list-link" href="#{{ this_date | date: "%Y-%m" }}">{{ this_date | date: "%Y 年 %m 月" }}</a>
+    <a class="archive-list-link" href="#{{ this_date | date: "%Y-%m" }}">{{ this_date | date: lang.archive_date }}</a>
     <span class="archive-list-count">{{ count }}</span>
     {% assign count = 1 %}
     {% else %}

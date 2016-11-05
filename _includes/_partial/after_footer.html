@@ -35,10 +35,11 @@ $(document).ready(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
   });
   
-  {% if page.type == 'post' && site.close_aside %}
+  {% if page.type == 'post' and site.close_aside %}
         getSize();
         if (myWidth >= 1024) {
           c.click();
+          $('#toc.toc-aside').show();
         }
   {% endif %}
   
@@ -57,10 +58,26 @@ $(document).ready(function(){
   });
 });
 </script>
+
 {% if page.type == 'post' %}
 <script type="text/javascript">
 $(document).ready(function(){ 
-  $('.toc-content').toc();
+  $('#toc.toc-aside').toc({
+    title: "{{ lang.contents }}",
+    showEffect: "none"
+  });
+  $('#toc.toc-article').toc({
+    title: "{{ lang.contents }}",
+    showEffect: "show",
+    showSpeed: 0
+  });
+});
+</script>
+{% endif %}
+
+{% if page.type == 'post' %}
+<script type="text/javascript">
+$(document).ready(function(){ 
   var ai = $('.article-content>iframe'),
       ae = $('.article-content>embed'),
       t  = $('#toc'),

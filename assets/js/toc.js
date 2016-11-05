@@ -47,12 +47,12 @@
   $.fn.toc = function(options) {
     var defaults = {
       noBackToTopLinks: false,
-      title: '文章目录',
+      title: 'Table Of Content',
       minimumHeaders: 3,
       headers: 'h1, h2, h3, h4, h5, h6',
       listType: 'ol', // values: [ol|ul]
       showEffect: 'show', // values: [show|slideDown|fadeIn|none]
-      showSpeed: 'slow' // set to 0 to deactivate effect
+      showSpeed: 0 // set to 0 to deactivate effect
     },
     settings = $.extend(defaults, options);
 
@@ -73,10 +73,6 @@
     if (!headers.length || headers.length < settings.minimumHeaders || !output.length) {
       $(this).hide();
       return;
-    }
-
-    if (0 === settings.showSpeed) {
-      settings.showEffect = 'none';
     }
 
     var render = {
