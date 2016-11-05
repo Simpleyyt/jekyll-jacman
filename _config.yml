@@ -27,6 +27,7 @@ defaults:
       path: ""
       type: "posts"
     values:
+      layout: "post"
       type: "post"
       
 #### Pagination
