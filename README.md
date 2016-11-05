@@ -1,8 +1,12 @@
 # Jekyll-Jacman
 
+[English](/README_en.md)
+
 Jekyll-Jacman 是为 [Jekyll](http://jekyllrb.com) 设计的一款清新且具有响应式的主题，拥有更丰富的特性并支持了很多的国内服务。Jacman 始于 [Hexo Jacman](https://github.com/wuchong/jacman) 移植而来。
 
-[主题演示](http://simpleyyt.github.io/jekyll-jacman/) | [Yitao's Blog](http://simpleyyt.github.io)
+[主题演示](http://simpleyyt.github.io/jekyll-jacman/)
+
+[Yitao's Blog](http://simpleyyt.github.io)
 
 [如何使用 Jacman 主题](http://simpleyyt.github.io/jekyll-jacman/jekyll/2015/09/20/how-to-use-jacman/)
 
@@ -68,8 +72,6 @@ bundle exec jekyll server
  RSS 订阅链接。
 - **fancybox**  
  图片查看的 [Fancybox](http://fancyapps.com/fancybox/) 工具。
-- **自定义主题颜色**
- 在`_config.yaml`中就可以修改主题的颜色，而不用去找那些奇怪的 stylus 文件。
 - **其他**
  你可以设置侧边栏在博文页面中不显示。
 
