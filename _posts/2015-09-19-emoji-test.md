@@ -5,6 +5,5 @@ tags:
 
 This is an emoji test. :smile:
 
-:bowtie: :man_with_gua_pi_mao:
-
-:man_with_gua_pi_mao:
+:bowtie::smile::laughing::blush::smiley::relaxed::smirk:
+:heart_eyes::kissing_heart::kissing_closed_eyes::flushed::relieved::satisfied::grin:
