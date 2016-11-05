@@ -28,7 +28,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      type: "post"
       
 #### Pagination
 paginate: 20

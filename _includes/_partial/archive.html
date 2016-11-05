@@ -18,24 +18,24 @@ if (page.archive){
 %>
 -->
 
-{% if page.type == 'archives' %}
+{% if page.layout == 'archives' %}
 {% assign title = lang.archive_a %}
 {% assign icon = 'archive' %}
 {% endif %}
 
-{% if page.type == 'categories' %}
+{% if page.layout == 'categories' %}
 {% assign title = lang.categories %}
 {% assign icon = 'category' %}
 {% endif %}
 
-{% if page.type == 'tags' %}
+{% if page.layout == 'tags' %}
 {% assign title = lang.tags %}
 {% assign icon = 'tag' %}
 {% endif %}
 
 <div class="archive-title" >
   <h2 class="{{ icon }}-icon"><span class='archive-folder'>{{ title }}</span></h2>
-  {% if page.type == 'archives' %}
+  {% if page.layout == 'archives' %}
   <div class="archiveslist archive-float clearfix">
     {% assign count = 1 %}
     {% for post in site.posts  %}
@@ -58,7 +58,7 @@ if (page.archive){
     </ul>
  </div>
   {% endif %}
-  {% if page.type == 'categories' %}
+  {% if page.layout == 'categories' %}
   
   <ul class="archive-list">
   <div class="archiveslist archive-float clearfix">
@@ -72,7 +72,7 @@ if (page.archive){
  </ul>
  {% endif %}
  
-  {% if page.type == 'tags' %}
+  {% if page.layout == 'tags' %}
   
   <ul class="archive-list">
   <div class="archiveslist archive-float clearfix">
