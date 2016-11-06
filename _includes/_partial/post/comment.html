@@ -1,6 +1,6 @@
 {% if site.duoshuo_shortname %}
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="{{ page.path }}" data-title="{{ page.title }}" data-url="{{ page.url }}"></div>
+	<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ site.url }}{{ site.baseurl }}{{ page.url }}"></div>
 </section>
 {% endif %}
 {% if site.disqus_shortname or site.disqus_shortname %}

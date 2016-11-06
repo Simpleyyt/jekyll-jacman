@@ -7,7 +7,7 @@
 	{% include _partial/post/jiathis.html %}
 	 </div>
 	{% else %}
-	  <div data-url="{{ site.baseurl }}{{ item.url }}" data-title="{% if item.title %}{{ item.title }} | {% endif %}{{ site.title }}" data-tsina="{{ site.author.tsina }}" class="share clearfix">
+	  <div data-url="{{ site.url }}{{ site.baseurl }}{{ item.url }}" data-title="{% if item.title %}{{ item.title }} | {% endif %}{{ site.title }}" data-tsina="{{ site.author.tsina }}" class="share clearfix">
 	  </div>
 	{% endif %}
 	</div>
@@ -19,7 +19,7 @@
 		<a href="{{ site.baseurl }}{{ item.url }}#disqus_thread" class="comments-count-link">Comments</a>
 	{% elsif site.duoshuo_shortname %}
 	  	<span></span>
-		<a href="{{ site.baseurl }}{{ item.url }}#comments" class="ds-thread-count comments-count-link" data-thread-key="{{ item.path }}" data-count-type="comments">&nbsp;</a>
+		<a href="{{ site.baseurl }}{{ item.url }}#comments" class="ds-thread-count comments-count-link" data-thread-key="{{ item.id }}" data-count-type="comments">&nbsp;</a>
 	{% endif %}
 </div>
 {% endif %}
