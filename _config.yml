@@ -35,8 +35,8 @@ paginate: 20
 #### Site
 title : Jekyll Jacman
 tagline: A fresh looking and responsive theme for Jekyll
-assets: http://simpleyyt.github.io/jekyll-jacman/assets
-baseurl: http://simpleyyt.github.io/jekyll-jacman
+assets: /jekyll-jacman/assets
+baseurl: /jekyll-jacman
 
 #### Language
 language: zh-CN    ## blog site languages: en, zh-CN, zh-TW
