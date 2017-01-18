@@ -46,7 +46,7 @@ menu:
   Home: /
   Archives: /archives
   About: /about
-## you can create `tags` and `categories` folders in `../source`.
+## you can create `tags` and `categories` folders (I had created them already).
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
 ## layout: tags (or categories)
