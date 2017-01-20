@@ -6,7 +6,7 @@ highlighter: pygments
 
 #### Permalink
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
+permalink: /:year/:month/:day/:title 
 
 #### Markdown Processors
 markdown: redcarpet
