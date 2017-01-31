@@ -1,6 +1,6 @@
 <footer class="article-footer clearfix">
 {% include _partial/post/catetags.html %}
-{% if index == false %}
+{% if index == false and site.share_button %}
 	<div class="article-share" id="share">
 	{% if site.jiathis.enable %}
 	<div class="share-jiathis">
