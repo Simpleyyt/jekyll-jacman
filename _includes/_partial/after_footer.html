@@ -59,6 +59,20 @@ $(document).ready(function(){
 });
 </script>
 
+{% if site.widgets contains "tagcloud" %}
+<script src="{{ site.assets }}/js/tagcloud.js"></script>
+<script>
+$(document).ready(function() {
+  var tags = [
+    {% for item in site.tags %}
+    { "name": "{{ item[0] }}", "path": "{{ site.baseurl }}/tags/#{{ item[0] }}", "length": {{ item[1] | size }} },
+    {% endfor %}
+  ];
+  $("#tagcloud").html(tagcloudHelper(tags));
+});
+</script>
+{% endif %}
+
 {% if page.layout == 'post' %}
 <script type="text/javascript">
 $(document).ready(function(){ 

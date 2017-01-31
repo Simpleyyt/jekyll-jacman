@@ -6,7 +6,7 @@ Jacman is a fresh looking and responsive theme for [Jekyll](http://jekyllrb.com)
 
  * [Demo](http://simpleyyt.github.io/jekyll-jacman/)
  * [Yitao's Blog](http://simpleyyt.github.io)
- * [如何使用 Jacman 主题](http://simpleyyt.github.io/jekyll-jacman/jekyll/2015/09/20/how-to-use-jacman/)
+ * [如何使用 Jacman 主题](http://simpleyyt.github.io/jekyll-jacman/jekyll/2015/09/20/how-to-use-jacman)
 
 ##Local Setup
 
@@ -31,6 +31,8 @@ cd jekyll-jacman
 
 You can change the `language` setting to `en` in `_config.yml`.
 
+You can also disable share buttons by setting `share_button` to `false`.
+
 Install Jekyll and other dependencies from the GitHub Pages gem:
 
 ```sh
@@ -49,7 +51,7 @@ More Details：[Setting up your GitHub Pages site locally with Jekyll](https://h
 - **menu**  
  Main navigation menu.
 - **widget**  
- Widgets displaying in sidebar.The category,tag,rss,archive,tagcloud,links,weibo are supported.
+ Widgets displaying in sidebar.The github card, category,tag,rss,archive,tagcloud,links,weibo are supported.
 - **Image**  
  Images about favicon, site logo, author image, banner image. Support different image styles like `img-logo`,`img-topic`,`img-center` etc.
 - **index**  

@@ -57,10 +57,12 @@ menu:
 widgets: 
 - category
 - tag
+- tagcloud
 - links
 - douban
+- github-card
 - rss
-## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo,douban
+## provide seven widgets:github-card,category,tag,rss,archive,tagcloud,links,weibo,douban
 
 
 #### RSS 
@@ -82,6 +84,7 @@ index:
 
 close_aside: false  #close sidebar in post page if true
 mathjax: true      #enable mathjax if true
+share_button: true #enable share buttons if true
 
 #### Author information
 author:
