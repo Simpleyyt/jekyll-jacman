@@ -6,7 +6,7 @@ Jekyll-Jacman 是为 [Jekyll](http://jekyllrb.com) 设计的一款清新且具�
 
  * [主题演示](http://simpleyyt.github.io/jekyll-jacman/)
  * [Yitao's Blog](http://simpleyyt.github.io)
- * [如何使用 Jacman 主题](http://simpleyyt.github.io/jekyll-jacman/jekyll/2015/09/20/how-to-use-jacman/)
+ * [如何使用 Jacman 主题](http://simpleyyt.github.io/jekyll-jacman/jekyll/2015/09/20/how-to-use-jacman)
 
 ##本地搭建
 
@@ -47,7 +47,7 @@ bundle exec jekyll server
 - **菜单 menu**  
  主导航菜单
 - **控件 widget**  
- 侧边栏的控件。包括：分类、标签、RSS、友情链接、微博秀。
+ 侧边栏的控件。包括：Github 名片	、分类、标签、RSS、友情链接、微博秀。
 - **图片相关 Image**  
  设置网站图标、网站logo、作者头像、博客顶部大图等。还提供了多种图片样式`img-logo`,`img-topic`,`img-center`等。
 - **首页模式 index**  
@@ -78,3 +78,9 @@ bundle exec jekyll server
 
 ##协议
 [MIT](/LICENSE)
+
+##捐赠
+
+支付宝捐赠链接还是要有的，万一真的有人捐呢。
+
+![支付宝扫码捐赠](http://p1.bpimg.com/567571/9a4a158daee8aa69.png)
