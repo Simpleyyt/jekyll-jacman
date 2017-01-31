@@ -31,6 +31,8 @@ cd jekyll-jacman
 
 You can change the `language` setting to `en` in `_config.yml`.
 
+You can also disable share buttons by setting `share_button` to `false`.
+
 Install Jekyll and other dependencies from the GitHub Pages gem:
 
 ```sh
@@ -49,7 +51,7 @@ More Details：[Setting up your GitHub Pages site locally with Jekyll](https://h
 - **menu**  
  Main navigation menu.
 - **widget**  
- Widgets displaying in sidebar.The category,tag,rss,archive,tagcloud,links,weibo are supported.
+ Widgets displaying in sidebar.The github card, category,tag,rss,archive,tagcloud,links,weibo are supported.
 - **Image**  
  Images about favicon, site logo, author image, banner image. Support different image styles like `img-logo`,`img-topic`,`img-center` etc.
 - **index**  
