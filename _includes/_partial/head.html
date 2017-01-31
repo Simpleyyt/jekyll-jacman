@@ -52,4 +52,11 @@
 
     <link rel="stylesheet" href="{{ site.assets }}/css/style.css" type="text/css">
     <link rel="stylesheet" href="{{ site.assets }}/css/highlight.css" type="text/css">
+    {% if site.banner_img %}
+    <style>
+        body >header {
+            background: url("{{ site.assets }}/{{ site.banner_img }}") center #2ca6cb;
+        }
+    </style>
+    {% endif %}
 </head>
