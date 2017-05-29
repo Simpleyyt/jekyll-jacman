@@ -6,7 +6,7 @@ highlighter: pygments
 
 #### Permalink
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
+permalink: /:categories/:year/:month/:day/:title
 
 #### Markdown Processors
 markdown: redcarpet
@@ -28,7 +28,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      
+
 #### Pagination
 paginate: 20
 
@@ -54,7 +54,7 @@ menu:
 ## ---
 
 #### Widgets
-widgets: 
+widgets:
 - category
 - tag
 - tagcloud
@@ -65,22 +65,22 @@ widgets:
 ## provide seven widgets:github-card,category,tag,rss,archive,tagcloud,links,weibo,douban
 
 
-#### RSS 
+#### RSS
 rss: /atom.xml ## RSS address.
 
 #### Image
 imglogo:
   enable: true             ## display image logo true/false.
   src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
-favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
+favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.
 apple_icon: img/jacman.jpg ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
 author_img: img/author.jpg ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
 banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
 
-#### index post is expanding or not 
+#### index post is expanding or not
 index:
   expand: true           ## default is unexpanding,so you can only see the short description of each post.
-  excerpt_link: Read More  
+  excerpt_link: Read More
 
 close_aside: false  #close sidebar in post page if true
 mathjax: true      #enable mathjax if true
@@ -118,13 +118,16 @@ links:
   Jark's Blog: http://wuchong.me
 
 #### Comment
-duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
-disqus_shortname:     ## e.g. wuchong   your disqus short name.
+duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.       website: http://duoshuo.com
+disqus_shortname:     ## e.g. wuchong   your disqus short name.        website: http://disqus.com
+hypercomments_id:     ## e.g. 91510     your hypercomments widget id.  website: http://hypercomments.com
+## set only one of them
+## duoshuo will be shutting down on June 1, 2017
 
 #### Share button
 jiathis:
   enable: false ## if you use jiathis as your share tool,the built-in share tool won't be display.
-  id:    ## e.g. 1889330 your jiathis ID. 
+  id:    ## e.g. 1889330 your jiathis ID.
   tsina: ## e.g. 2176287895 Your weibo id,It will be used in share button.
 
 #### Analytics
@@ -146,13 +149,13 @@ fancybox: true        ## if you use gallery post or want use fancybox please set
 totop: true           ## if you want to scroll to top in every post set the value to true
 
 #### Custom Search
-google_cse: 
+google_cse:
   enable: false
   cx: 018294693190868310296:abnhpuysycw  ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
-## https://www.google.com/cse/ 
+## https://www.google.com/cse/
 ## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
 ## set the 'front-matter' as
-## layout: search 
+## layout: search
 ## title: search
 ## ---
 baidu_search:     ## http://zn.baidu.com/
