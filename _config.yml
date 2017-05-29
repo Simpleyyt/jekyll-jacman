@@ -122,7 +122,7 @@ duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.       website: 
 disqus_shortname:     ## e.g. wuchong   your disqus short name.        website: http://disqus.com
 hypercomments_id:     ## e.g. 91510     your hypercomments widget id.  website: http://hypercomments.com
 ## set only one of them
-## duoshuo is about to be shutdown
+## duoshuo will be shutting down on June 1, 2017
 
 #### Share button
 jiathis:
