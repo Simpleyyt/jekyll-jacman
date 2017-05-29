@@ -31,7 +31,7 @@ cd jekyll-jacman
 
 You can change the `language` setting to `en` in `_config.yml`.
 
-You can also disable share buttons by setting `share_button` to `false`.
+You can also disable share buttons by setting `share_to` to `false`.
 
 Install Jekyll and other dependencies from the GitHub Pages gem:
 
@@ -77,7 +77,7 @@ More Details：[Setting up your GitHub Pages site locally with Jekyll](https://h
  Enable [Fancybox](http://fancyapps.com/fancybox/)
 - **others**
  You can configure sidebar not show in post pages.
- 
+
 ## License
 
 [MIT](/LICENSE)
