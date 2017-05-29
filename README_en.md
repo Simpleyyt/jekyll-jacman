@@ -77,13 +77,7 @@ More Details：[Setting up your GitHub Pages site locally with Jekyll](https://h
  Enable [Fancybox](http://fancyapps.com/fancybox/)
 - **others**
  You can configure sidebar not show in post pages.
-
-## About kramdown  engine and rouge highlighter
-
-Redcarpet engine and pygments highlighter are currently unsupported on GitHub Pages. However, everythings seems normal except for the *Page build warning* mail. So I just ignore it.
-
-I also create a `kramdown` branch, which changes the markdown engine to kramdown and highlighter to rough.
-
+ 
 ## License
 
 [MIT](/LICENSE)
