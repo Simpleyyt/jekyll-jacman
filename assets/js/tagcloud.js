@@ -189,7 +189,7 @@ function tagcloudHelper(tags, options) {
   if (orderby === 'random' || orderby === 'rand') {
     tags = tags.random();
   } else {
-    tags = tags.sort(orderby, order);
+    tags = sortBy(tags, orderby, order);
   }
 
   // Ignore tags with zero posts
@@ -204,7 +204,7 @@ function tagcloudHelper(tags, options) {
 
   var sizes = [];
 
-  tags.sort('length').forEach(function(tag) {
+  sortBy(tags, 'length').forEach(function(tag) {
     var length = tag.length;
     if (~sizes.indexOf(length)) return;
 
@@ -381,4 +381,13 @@ function convertRGB(value) {
 
 function mixValue(a, b, ratio) {
   return a + (b - a) * ratio;
+}
+
+function sortBy(array, orderby, order = 1) {
+  return array.sort(function(a, b) {
+    var x = a[orderby];
+    var y = b[orderby];
+
+    return ((x < y) ? -1 : ((x > y) ? 1 : 0)) * order;
+  });
 }
