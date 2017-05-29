@@ -79,7 +79,7 @@ index:
 
 close_aside: false  #close sidebar in post page if true
 mathjax: true      #enable mathjax if true
-share_button: true #enable share buttons if true
+share_to: true #enable share-to buttons if true
 
 #### Author information
 author:
