@@ -8,7 +8,7 @@ Jekyll-Jacman 是为 [Jekyll](http://jekyllrb.com) 设计的一款清新且具�
  * [Yitao's Blog](http://simpleyyt.github.io)
  * [如何使用 Jacman 主题](http://simpleyyt.github.io/jekyll-jacman/jekyll/2015/09/20/how-to-use-jacman)
 
-##本地搭建
+## 本地搭建
 
 确保已安装`Ruby 2.1.0` 或更高版本：
 
@@ -43,7 +43,8 @@ bundle exec jekyll server
 
 更多细节可以参考：[Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
 
-##功能
+## 功能
+
 - **菜单 menu**  
  主导航菜单
 - **控件 widget**  
@@ -73,13 +74,15 @@ bundle exec jekyll server
 - **其他**
  你可以设置侧边栏在博文页面中不显示。
 
-##关于 Kramdown 引擎
+## 关于 Kramdown 引擎
+
 由于 Github 不再支持原来的 redcarpet，因此每次更新时都会有 Page build warning 发到邮件。我新建了一个分支 kramdown，把 Markdown 引擎换成了 kramdown，把高亮换成了 rough。但是，kramdown 的 markdown 语法比较严格，我不喜欢。所以，你也可以像我一样建个规则过滤 Page build warning 邮件。
 
-##协议
+## 协议
+
 [MIT](/LICENSE)
 
-##捐赠
+## 捐赠
 
 支付宝捐赠链接还是要有的，万一真的有人捐呢。
 
