@@ -2,11 +2,40 @@
 <section id="comments" class="comment">
 	<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ site.url }}{{ site.baseurl }}{{ page.url }}"></div>
 </section>
-{% endif %}
-{% if site.disqus_shortname or site.disqus_shortname %}
+{% elsif site.disqus_shortname %}
 <section id="comments" class="comment">
   <div id="disqus_thread">
     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
 </section>
+{% elsif site.hypercomments_id %}
+<section id="comments" class="comment">
+	<div id="hypercomments_widget"></div>
+</section>
+<script type="text/javascript">
+_hcwp = window._hcwp || [];
+_hcwp.push({widget:"Stream", widget_id: {{ site.hypercomments_id }}});
+(function() {
+if("HC_LOAD_INIT" in window)return;
+HC_LOAD_INIT = true;
+var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/91510/"+lang+"/widget.js";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hcc, s.nextSibling);
+})();
+</script>
+<style>
+input.hcc::-moz-placeholder, textarea.hcc::-moz-placeholder {
+	color: #aaa;
+}
+
+input.hcc:-ms-input-placeholder, textarea.hcc::-ms-input-placeholder {
+	color: #aaa;
+}
+
+input.hcc::-webkit-input-placeholder, textarea.hcc::-webkit-input-placeholder {
+	color: #aaa;
+}
+</style>
 {% endif %}
