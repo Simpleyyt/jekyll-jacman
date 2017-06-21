@@ -23,6 +23,13 @@
 	{% elsif site.hypercomments_id %}
 	  	<span></span>
 		<a href="{{ site.baseurl }}{{ item.url }}#hypercomments_widget" class="comments-count-link">Comments</a>
+	{% elsif site.yungentie_productkey %}
+	<!-- DOM元素 -->
+	<!-- 根据站点情况，配置data-url或data-sourceId中的一个即可 -->
+			<span></span>
+		<a href="{{ site.baseurl }}{{ item.url }}#cloud-tie-wrapper" class="comments-count-link">
+			<span lang="join-count" class="join-count" data-url="" data-sourceId="{{ item.id }}">&nbsp;</span>
+		</a>
 	{% endif %}
 </div>
 {% endif %}
