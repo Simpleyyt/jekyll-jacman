@@ -13,7 +13,7 @@
     {% assign title = lang.tags %}
     {% endif %}
     <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
-    
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     {% if site.author.name %}
@@ -22,7 +22,7 @@
 
     {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
     <!--<%- open_graph({twitter_id: theme.author.twitter, google_plus: theme.author.google_plus}) %>-->
-    
+
     <meta name="description" content="page.description">
     {% if page.layout == 'post' %}
     <meta property="og:type" content="article">
@@ -57,6 +57,16 @@
         body >header {
             background: url("{{ site.assets }}/{{ site.banner_img }}") center #2ca6cb;
         }
+    </style>
+    {% endif %}
+    {% if site.yungentie_productkey and page.layout == 'default' %}
+    <style>
+      .join-count::before {
+        content: none !important;
+      }
+      .join-count {
+        margin-right: .5em;
+      }
     </style>
     {% endif %}
 </head>
