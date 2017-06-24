@@ -34,7 +34,7 @@ assets: /assets
 baseurl:
 
 #### Language
-language: zh-CN    ## blog site languages: en, zh-CN, zh-TW
+language: zh-CN    ## blog site languages: en, zh-CN, zh-TW, de
 
 #### Menu
 menu:
@@ -166,3 +166,4 @@ simple_jekyll_search:
   fulltext: false
 gems:
  - jemoji
+#- jekyll-admin
