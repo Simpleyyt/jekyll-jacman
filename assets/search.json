@@ -12,7 +12,7 @@ sitemap: false
     {% for doc in docs %}
       {
         "title": {{ doc.title | jsonify }},
-        "date": {{ doc.date | date: lang.archive_date | jsonify }},
+        "date": {{ doc.date | date: lang.archive_date | default: " " | jsonify }},
         "excerpt": {{ doc.excerpt | markdownify | strip_html | jsonify }},
         {% if site.simple_jekyll_search.fulltext %}"content": {{ doc.content | markdownify | strip_html | jsonify | replace:'\n',' ' | replace:'   ',' ' | replace:'  ',' ' }},{% endif %}
         "url": {{ site.baseurl | append: doc.url | jsonify }}
