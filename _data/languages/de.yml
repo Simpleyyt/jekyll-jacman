@@ -1,0 +1,27 @@
+categories: Kategorien
+search: Suche
+tags: Tags
+tagcloud: Tag Übersicht
+prev: Zurück
+next: Weiter
+prev-post: 'Vorheriger Post: '
+next-post: 'Nächster Post: '
+search-load:  Wird geladen, bitte warten.
+comment: Kommentare
+contents: Inhalt
+archive_a: Archiv
+archive_b: "Archiv: %s"
+archive_date: "%b %Y"
+page: Seite %d
+recent_posts: Neueste Posts
+menu: Menü
+weibo: Weibo
+links: Links
+rss: RSS
+doubanshow: Douban Show
+github-card: Github Card
+showsidebar: Seistenleiste anzeigen
+hidesidebar: Seistenleiste verstecken
+updated: Aktualisiert
+totop: Nach oben
+datepublished: Veröffentlicht
