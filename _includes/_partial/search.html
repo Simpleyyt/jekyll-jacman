@@ -19,10 +19,12 @@ google.setOnLoadCallback(function(){
 },true);
 </script>
 {% elsif site.simple_jekyll_search.enable %}
-<!--<div id="search-container">
-  <ul id="results-container"></ul>
-</div>
--->
+<style>
+#main {
+  margin-left: 10% !important;
+}
+</style>
+
 <div id="main" class="archive-part clearfix">
   <div id="results-container">
   </div>
@@ -48,7 +50,7 @@ var loadQuery = function () {
   var params = {}
   location.search.substr(1).split("&").forEach(function(item) {params[item.split("=")[0]] = item.split("=")[1]});
   if(params.hasOwnProperty(PROP="q")){
-    document.getElementById('search').value = params["q"];
+    document.getElementById('search').value = decodeURIComponent(params["q"]);
     document.getElementById('search').dispatchEvent(new Event('keyup'));
   }
 };
