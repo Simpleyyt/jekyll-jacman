@@ -58,7 +58,7 @@ bundle exec jekyll server
 - **目录 toc**  
  在文章中和侧边栏可以显示目录。
 - **评论 comments**  
- 支持 [多说](http://duoshuo.com/) & [disqus](https://disqus.com/) 评论。
+ [disqus](https://disqus.com/) 评论。
 - **分享 jiathis**  
  启用 内建分享工具 或 [加网](http://www.jiathis.com/) 分享系统。
 - **网站统计 Analytiscs**  
