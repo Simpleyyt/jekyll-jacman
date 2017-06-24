@@ -157,7 +157,7 @@ $(document).ready(function(){
       myWidth = document.documentElement.clientWidth;
     };
     var qrsize = myWidth > 1024 ? 200:100;
-    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var options = {render: 'image', size: qrsize, fill: '{{ site.colors.primary_dark }}', text: url, radius: 0.5, quiet: 1};
     var p = $('.article-share-qrcode').position();
     $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
                           .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)

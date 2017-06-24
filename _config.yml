@@ -15,6 +15,12 @@ markdown: kramdown
 kramdown:
     input: GFM
 
+#### Colors
+colors:
+  primary: "#2ca6cb"
+  primary_dark: "#1b7f9e"
+  accent: "#ea6753"
+
 #### Default Attributes
 defaults:
   -

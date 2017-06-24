@@ -38,6 +38,7 @@
     <meta name="twitter:description" content="page.description">
     <meta name="twitter:creator" content="@{{ site.author.twitter }}">
     <link rel="publisher" href="{{ site.author.google_plus }}">
+    <meta name="theme-color" content="{{ site.colors.primary_dark }}">
 
     {% if site.rss %}
     <link rel="alternative" href="{{ site.rss }}" title="{{ site.title }}" type="application/atom+xml">
@@ -55,7 +56,7 @@
     {% if site.banner_img %}
     <style>
         body >header {
-            background: url("{{ site.assets }}/{{ site.banner_img }}") center #2ca6cb;
+            background: url("{{ site.assets }}/{{ site.banner_img }}") center {{ site.colors.primary }};
         }
     </style>
     {% endif %}
