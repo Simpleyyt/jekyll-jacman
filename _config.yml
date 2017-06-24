@@ -34,7 +34,7 @@ assets: /jekyll-jacman/assets
 baseurl: /jekyll-jacman
 
 #### Language
-language: zh-CN    ## blog site languages: en, zh-CN, zh-TW
+language: zh-CN    ## blog site languages: en, zh-CN, zh-TW, de
 
 #### Menu
 menu:
@@ -161,6 +161,9 @@ baidu_search:     ## http://zn.baidu.com/
 tinysou_search:     ## http://tinysou.com/
   enable: false
   id:  ## e.g. "4ac092ad8d749fdc6293" for your tiny search id
-
+simple_jekyll_search:
+  enable: true
+  fulltext: false
 gems:
  - jemoji
+#- jekyll-admin

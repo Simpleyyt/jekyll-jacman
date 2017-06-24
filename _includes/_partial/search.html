@@ -13,9 +13,50 @@ google.setOnLoadCallback(function(){
   customSearchControl.draw('cse', options);
   var match = location.search.match(/q=([^&]*)(&|$)/);
   if(match && match[1]){
-    var search = decodeURIComponent(match[1]); 
+    var search = decodeURIComponent(match[1]);
     customSearchControl.execute(search);
   }
 },true);
+</script>
+{% elsif site.simple_jekyll_search.enable %}
+<style>
+#main {
+  margin-left: 10% !important;
+}
+</style>
+
+<div id="main" class="archive-part clearfix">
+  <div id="results-container">
+  </div>
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/jekyll-search.js" type="text/javascript"></script>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '{{ site.baseurl }}/search/search.json',
+  searchResultTemplate:
+   '<section class="post" itemscope itemprop="blogPost"> \
+     <a href="{url}" title="{title}" itemprop="url"> \
+       <time datetime="{date}" itemprop="datePublished">{date}</time> \
+         <h1 itemprop="name">{title}</h1> \
+     </a> \
+   </section>'
+});
+
+<!--Load parameter from query if possible. Needs to trigger keyup, may not be ready immediately -->
+var loadQuery = function () {
+  var params = {}
+  location.search.substr(1).split("&").forEach(function(item) {params[item.split("=")[0]] = item.split("=")[1]});
+  if(params.hasOwnProperty(PROP="q")){
+    document.getElementById('search').value = decodeURIComponent(params["q"]);
+    document.getElementById('search').dispatchEvent(new Event('keyup'));
+  }
+};
+
+[100, 300, 500, 1000].forEach(function(timeout) {
+  setTimeout(loadQuery, timeout);
+});
 </script>
 {% endif %}
