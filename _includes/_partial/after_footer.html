@@ -157,7 +157,7 @@ $(document).ready(function(){
       myWidth = document.documentElement.clientWidth;
     };
     var qrsize = myWidth > 1024 ? 200:100;
-    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var options = {render: 'image', size: qrsize, fill: '{{ site.colors.primary_dark }}', text: url, radius: 0.5, quiet: 1};
     var p = $('.article-share-qrcode').position();
     $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
                           .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
@@ -178,19 +178,6 @@ $(document).ready(function(){
 </script>
 {% endif %}
 
-{% if site.duoshuo_shortname %}
-<script type="text/javascript">
-  var duoshuoQuery = {short_name:"{{ site.duoshuo_shortname }}"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0]
-    || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-</script>
-{% endif %}
 {% if site.disqus_shortname %}
 <script type="text/javascript">
 var disqus_shortname = '{{ site.disqus_shortname }}';

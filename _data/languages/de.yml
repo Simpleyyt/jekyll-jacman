@@ -1,7 +1,8 @@
+# Lines ending with two hashtags are not translated into this language yet
 categories: Kategorien
 search: Suche
 tags: Tags
-tagcloud: Tag Übersicht
+tagcloud: Tag Wolken
 prev: Zurück
 next: Weiter
 prev-post: 'Vorheriger Post: '
@@ -25,3 +26,5 @@ hidesidebar: Seistenleiste verstecken
 updated: Aktualisiert
 totop: Nach oben
 datepublished: Veröffentlicht
+by: Von
+read_more: Weiterlesen

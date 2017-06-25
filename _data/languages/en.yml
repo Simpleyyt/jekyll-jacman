@@ -1,3 +1,4 @@
+# Lines ending with two hashtags are not translated into this language yet
 categories: Categories
 search: Search
 tags: Tags
@@ -9,8 +10,8 @@ next-post: 'Next: '
 search-load:  Loading, please wait.
 comment: Comments
 contents: Contents
-archive_a: Archives
-archive_b: "Archives: %s"
+archive_a: Archive
+archive_b: "Archive: %s"
 archive_date: "%b %Y"
 page: Page %d
 recent_posts: Recent Posts
@@ -25,3 +26,5 @@ hidesidebar: Hide Sidebar
 updated: Updated
 totop: Back to Top
 datepublished: Published
+by: By
+read_more: Read More

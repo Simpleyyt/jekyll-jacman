@@ -1,5 +1,5 @@
 #### Exclude
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md", ".atomignore", ".hidden"]
 
 #### Code Highlighter
 # 'pygments' is unsupported on GitHub Pages now.
@@ -7,13 +7,19 @@ highlighter: rouge
 
 #### Permalink
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title
+permalink: /post/:categories/:year/:month/:day/:title
 
 #### Markdown Processors
 # 'redcarpet' is unsupported on GitHub Pages now.
 markdown: kramdown
 kramdown:
     input: GFM
+
+#### Colors
+colors:
+  primary: "#2ca6cb"
+  primary_dark: "#1b7f9e"
+  accent: "#ea6753"
 
 #### Default Attributes
 defaults:
@@ -34,12 +40,12 @@ assets: /assets
 baseurl:
 
 #### Language
-language: zh-CN    ## blog site languages: en, zh-CN, zh-TW, de
+language: zh-CN   ## blog site languages: en, zh-CN, zh-TW, de
 
 #### Menu
 menu:
   Home: /
-  Archives: /archives
+  Archive: /archives
   About: /about
 ## you can create `tags` and `categories` folders (I had created them already).
 ## And create a `index.md` file in each of them.
@@ -75,7 +81,6 @@ banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
 #### index post is expanding or not
 index:
   expand: true           ## default is unexpanding,so you can only see the short description of each post.
-  excerpt_link: Read More
 
 close_aside: false  #close sidebar in post page if true
 mathjax: true      #enable mathjax if true
@@ -113,12 +118,10 @@ links:
   Jark's Blog: http://wuchong.me
 
 #### Comment
-duoshuo_shortname:    ## e.g. wuchong      your duoshuo short name.       website: http://duoshuo.com
 disqus_shortname:     ## e.g. wuchong      your disqus short name.        website: http://disqus.com
 hypercomments_id:     ## e.g. 91510        your hypercomments widget id.  website: http://hypercomments.com
 yungentie_productkey: ## your netease yungentie product key.              website: https://gentie.163.com
 ## set only one of them
-## duoshuo will be shutting down on June 1, 2017
 
 #### Share button
 jiathis:
@@ -140,20 +143,10 @@ cnzz_tongji:
   enable: false
   siteid:    ## e.g. 1253575964 your cnzz tongji site id
 
-#### Miscellaneous
-fancybox: true        ## if you use gallery post or want use fancybox please set the value to true.
-totop: true           ## if you want to scroll to top in every post set the value to true
-
 #### Custom Search
 google_cse:
   enable: false
   cx: 018294693190868310296:abnhpuysycw  ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
-## https://www.google.com/cse/
-## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
-## set the 'front-matter' as
-## layout: search
-## title: search
-## ---
 baidu_search:     ## http://zn.baidu.com/
   enable: false
   id:   ## e.g. "783281470518440642"  for your baidu search id
@@ -164,6 +157,25 @@ tinysou_search:     ## http://tinysou.com/
 simple_jekyll_search:
   enable: true
   fulltext: false
+
+#### HTML Compression add to front-matter of _layouts/default.html
+# layout: compress
+compress_html:    # http://jch.penibelst.de/
+  profile: false  # List saved bytes
+  clippings: all
+  comments: all
+  endings: all
+  blanklines: false
+  startings: []
+  ignore:
+    envs: [local, dev]
+
+#### Miscellaneous
+footer_hidden: false
+fancybox: true        ## if you use gallery post or want use fancybox please set the value to true.
+totop: true           ## if you want to scroll to top in every post set the value to true
+include: ["_pages"]
+
 gems:
  - jemoji
 #- jekyll-admin

@@ -38,6 +38,7 @@
     <meta name="twitter:description" content="page.description">
     <meta name="twitter:creator" content="@{{ site.author.twitter }}">
     <link rel="publisher" href="{{ site.author.google_plus }}">
+    <meta name="theme-color" content="{{ site.colors.primary_dark }}">
 
     {% if site.rss %}
     <link rel="alternative" href="{{ site.rss }}" title="{{ site.title }}" type="application/atom+xml">
@@ -50,12 +51,12 @@
     <link rel="apple-touch-icon-precomposed" href="{{ site.assets }}/{{ site.apple_icon }}">
     {% endif %}
 
-    <link rel="stylesheet" href="{{ site.assets }}/css/style.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.assets }}/css/main.css" type="text/css">
     <link rel="stylesheet" href="{{ site.assets }}/css/highlight.css" type="text/css">
     {% if site.banner_img %}
     <style>
         body >header {
-            background: url("{{ site.assets }}/{{ site.banner_img }}") center #2ca6cb;
+            background: url("{{ site.assets }}/{{ site.banner_img }}") center {{ site.colors.primary }};
         }
     </style>
     {% endif %}

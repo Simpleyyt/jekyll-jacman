@@ -62,7 +62,7 @@ More Details：[Setting up your GitHub Pages site locally with Jekyll](https://h
 - **toc**  
  Show Table Of Contents in article & aside.
 - **comments**  
- [duoshuo](http://duoshuo.com/) & [disqus](https://disqus.com/) are supported.
+ [disqus](https://disqus.com/) is supported.
 - **jiathis**  
  Build-in share tool or [JiaThis](http://www.jiathis.com/) share buttons at the bottom of articles.
 - **Analytiscs**  

@@ -24,20 +24,20 @@ menu:
   关于: /about
 
 #### 控件
-widgets: 
+widgets:
 - category
 - tag
 - links
 - rss
 
-#### RSS 
-rss: /atom.xml 
+#### RSS
+rss: /atom.xml
 
 #### 图片相关
 imglogo:
   enable: true               ## 是否显示网站 logo
-  src: img/logo.png        
-favicon: img/favicon.ico     ## 网站图标    
+  src: img/logo.png
+favicon: img/favicon.ico     ## 网站图标
 apple_icon: img/jacman.jpg   ## 苹果设备上的图标，背景不要透明
 author_img: img/author.jpg   ## 网站底部的博主头像
 banner_img: img/banner.jpg   ## 博客顶部的图片
@@ -47,25 +47,24 @@ close_aside: false      ##是否在文章页面自动关闭侧边栏
 #### 首页相关
 index:
   expand: true              ## 首页文章是否展开。默认为展开式，显示 Read More。
-  excerpt_link: Read More    
 
 #### 作者信息
 author:
   name: ## 作者名
   intro_line1:  "Hello ,I'm Larry Page in Google."    ## 网站底部的个人介绍
-  intro_line2:  "This is my blog,believe it or not."  
+  intro_line2:  "This is my blog,believe it or not."
   weibo_verifier:  ## 微博秀的验证码
   tsina:           ## 用于微博秀和微博分享
   weibo:           ## 用于显示网站底部社交按钮，下同
-  douban:         
-  zhihu:  
-  email:     
-  twitter:   
-  github:     
-  facebook: 
-  linkedin:   
-  google_plus:   
-  stackoverflow:  
+  douban:
+  zhihu:
+  email:
+  twitter:
+  github:
+  facebook:
+  linkedin:
+  google_plus:
+  stackoverflow:
 
 
 #### 目录
@@ -77,17 +76,16 @@ toc:
 links:
   码农圈: https://coderq.com,一个面向程序员交流分享的新一代社区
   Jark's Blog: http://wuchong.me
-  
+
 #### 评论
-duoshuo_shortname: 
-disqus_shortname:  
+disqus_shortname:
 
 #### 分享按钮
 jiathis:
   enable: false   ## 默认使用主题内建分享
-  id:    
-  tsina: 
-  
+  id:
+  tsina:
+
 #### 网站统计
 google_analytics:
   enable: false
@@ -101,21 +99,21 @@ cnzz_tongji:
   siteid:        ## CNZZ统计站点ID
 
 #### 杂项
-ShowCustomFont: true  
-fancybox: true        
-totop: true           
+ShowCustomFont: true
+fancybox: true
+totop: true
 
 #### 自定义搜索
-google_cse: 
+google_cse:
   enable: false
-  cx:  
-baidu_search:    
+  cx:
+baidu_search:
   enable: false
-  id:   
-  site: http://zhannei.baidu.com/cse/search 
+  id:
+  site: http://zhannei.baidu.com/cse/search
 tinysou_search:     ## http://tinysou.com/
   enable: false
-  id: "4ac092ad8d749fdc6293" 
+  id: "4ac092ad8d749fdc6293"
 ```
 
 ### 属性功能
@@ -135,7 +133,7 @@ title: tags (或categories)
 提供了7种小工具。包括标签、分类、RSS、友情链接、微博秀。
 
  **友情链接**：友情链接的网址添加可以在`links`属性下添加。
- 
+
  **微博秀**：需要注意的是，如果要启用微博秀，您必须填上`author`属性下`tsina`和`weibo_verifier`的值，前者是您微博ID，后者是您微博秀的验证码，访问 http://app.weibo.com/tool/weiboshow 在如下图位置，可以获得您的 verifier，如：我的是`b3593ceb`。
 ![](http://ww1.sinaimg.cn/large/81b78497jw1emegd6b0ytj209204pweu.jpg)
 
@@ -157,8 +155,6 @@ title: tags (或categories)
 是否启用在文章中或侧边栏中的目录功能。二者可以都为`true`或都为`false`。同时，如果你希望在特定的某一篇文章中关闭目录功能你可以在文章文件开头中的`front-matter`中加上一行`toc: false`。
 
 - **评论 comments**
-填写`duoshuo_shortname`[多说](http://duoshuo.com/)的用户名，启用多说评论系统。在大陆地区更好用的评论系统。
-
  填写`disqus_shortname`[disqus](http://disqus.com/) 的用户名，启用 disqus 评论系统。国际上更广泛使用的评论系统。设置博客根目录下的`_config.yml`文件中的`disqus_shortname`同样也能开启该功能。
 
 - **加网分享 jiathis**
@@ -220,7 +216,7 @@ title: tags (或categories)
 - **Q：怎么提意见和建议？**
 
   > 主题还在不断完善中，欢迎 [open issue](https://github.com/Simpleyyt/jekyll-jacman/issues) 来提建议，参与讨论。
-  
+
 - **Q：为什么我修改了配置文件/发表了博文，解析出来的却是乱码呢？**
 
   > 请将你的配置文件/markdown文件保存成 `UTF-8` 格式。

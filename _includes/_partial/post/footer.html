@@ -14,10 +14,7 @@
 {% endif %}
 {% if index %}
 <div class="comments-count">
-	{% if site.duoshuo_shortname %}
-			<span></span>
-		<a href="{{ site.baseurl }}{{ item.url }}#comments" class="ds-thread-count comments-count-link" data-thread-key="{{ item.id }}" data-count-type="comments">&nbsp;</a>
-	{% elsif site.disqus_shortname %}
+	{% if site.disqus_shortname %}
 	  	<span></span>
 		<a href="{{ site.baseurl }}{{ item.url }}#disqus_thread" class="comments-count-link">Comments</a>
 	{% elsif site.hypercomments_id %}

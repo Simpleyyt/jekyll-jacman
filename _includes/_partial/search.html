@@ -35,7 +35,7 @@ google.setOnLoadCallback(function(){
 SimpleJekyllSearch({
   searchInput: document.getElementById('search'),
   resultsContainer: document.getElementById('results-container'),
-  json: '{{ site.baseurl }}/search/search.json',
+  json: '{{ site.baseurl }}/assets/search.json',
   searchResultTemplate:
    '<section class="post" itemscope itemprop="blogPost"> \
      <a href="{url}" title="{title}" itemprop="url"> \
@@ -47,7 +47,7 @@ SimpleJekyllSearch({
 
 <!--Load parameter from query if possible. Needs to trigger keyup, may not be ready immediately -->
 var loadQuery = function () {
-  var params = {}
+  var params = {};
   location.search.substr(1).split("&").forEach(function(item) {params[item.split("=")[0]] = item.split("=")[1]});
   if(params.hasOwnProperty(PROP="q")){
     document.getElementById('search').value = decodeURIComponent(params["q"]);
