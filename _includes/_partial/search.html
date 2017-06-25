@@ -47,7 +47,7 @@ SimpleJekyllSearch({
 
 <!--Load parameter from query if possible. Needs to trigger keyup, may not be ready immediately -->
 var loadQuery = function () {
-  var params = {}
+  var params = {};
   location.search.substr(1).split("&").forEach(function(item) {params[item.split("=")[0]] = item.split("=")[1]});
   if(params.hasOwnProperty(PROP="q")){
     document.getElementById('search').value = decodeURIComponent(params["q"]);
