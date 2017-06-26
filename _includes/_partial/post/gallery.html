@@ -2,10 +2,12 @@
   <div class="photoset">
     {% if item.photos | size != 0 %}
       {% for photo in item.photos %}
-        <img src="{{ photo }}">
+        <img src="{{ photo | replace_first: 'BASEURL', site.baseurl }}">
       {% endfor %}
+    {% elsif item.image %}
+      <img src="{{ item.image | replace_first: 'BASEURL', site.baseurl }}">
     {% else %}
-      <img src="{{ item.photos }}">
+      <img src="{{ item.photos | replace_first: 'BASEURL', site.baseurl }}">
     {% endif %}
   </div>
   <div class="control">

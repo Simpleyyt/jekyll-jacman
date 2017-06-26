@@ -1,5 +1,5 @@
 ---
 layout: categories
 type: categories
-permalink: /categories
+permalink: /categories/index.html
 ---

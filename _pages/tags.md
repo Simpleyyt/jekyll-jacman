@@ -1,5 +1,5 @@
 ---
 layout: tags
 type: tags
-permalink: /tags
+permalink: /tags/index.html
 ---

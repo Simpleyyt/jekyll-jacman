@@ -1,5 +1,5 @@
 ---
 layout: archives
 type: archives
-permalink: /archives
+permalink: /archives/index.html
 ---

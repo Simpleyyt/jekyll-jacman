@@ -2,7 +2,7 @@
 layout: page
 type: page
 title: About me
-permalink: /about
+permalink: /about/index.html
 ---
 
 Building....

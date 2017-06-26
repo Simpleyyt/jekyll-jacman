@@ -2,7 +2,7 @@
 categories: Kategorien
 search: Suche
 tags: Tags
-tagcloud: Tag Wolken
+tagcloud: Tag Übersicht
 prev: Zurück
 next: Weiter
 prev-post: 'Vorheriger Post: '
@@ -19,8 +19,8 @@ menu: Menü
 weibo: Weibo
 links: Links
 rss: RSS
-doubanshow: Douban Show
-github-card: Github Card
+doubanshow: Douban anzeigen
+github-card: GitHub Karte
 showsidebar: Seistenleiste anzeigen
 hidesidebar: Seistenleiste verstecken
 updated: Aktualisiert

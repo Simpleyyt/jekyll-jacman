@@ -1,5 +1,5 @@
 ---
 layout: search
 type: search
-permalink: /search
+permalink: /search/index.html
 ---

@@ -1,5 +1,6 @@
-#### Exclude
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md", ".atomignore", ".hidden"]
+#### In/Excludes
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md", ".atomignore", ".hidden", "vendor", "jed.sh", "jec.sh", "Jenkinsfile", ".git", "CNAME"]
+include: ["_pages"]
 
 #### Code Highlighter
 # 'pygments' is unsupported on GitHub Pages now.
@@ -7,7 +8,7 @@ highlighter: rouge
 
 #### Permalink
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /post/:categories/:year/:month/:day/:title
+permalink: /post/:categories/:year/:month/:day/:title:output_ext
 
 #### Markdown Processors
 # 'redcarpet' is unsupported on GitHub Pages now.
@@ -47,12 +48,8 @@ menu:
   Home: /
   Archive: /archives
   About: /about
-## you can create `tags` and `categories` folders (I had created them already).
-## And create a `index.md` file in each of them.
-## set `front-matter`as
-## layout: tags (or categories)
-## title: tags (or categories)
-## ---
+# Tags: /tags
+# Categories: /categories
 
 #### Widgets
 widgets:
@@ -64,7 +61,7 @@ widgets:
 - github-card
 - rss
 ## provide seven widgets:github-card,category,tag,rss,archive,tagcloud,links,weibo,douban
-
+widget_tags_sort_by_count: false
 
 #### RSS
 rss: /atom.xml ## RSS address.
@@ -72,9 +69,9 @@ rss: /atom.xml ## RSS address.
 #### Image
 imglogo:
   enable: true             ## display image logo true/false.
-  src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
-favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.
-apple_icon: img/jacman.jpg ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
+  src: img/site-logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
+favicon: img/site-favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.
+apple_icon: img/site-icon-apple-114px.png ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
 author_img: img/author.jpg ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
 banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
 
@@ -174,8 +171,9 @@ compress_html:    # http://jch.penibelst.de/
 footer_hidden: false
 fancybox: true        ## if you use gallery post or want use fancybox please set the value to true.
 totop: true           ## if you want to scroll to top in every post set the value to true
-include: ["_pages"]
+future: true          ## if posts with future date should be built too
 
 gems:
  - jemoji
+ - jekyll-redirect-from
 #- jekyll-admin

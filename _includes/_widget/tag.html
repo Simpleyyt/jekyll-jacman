@@ -1,12 +1,26 @@
 {% if site.tags | size != 0 %}
 <div class="tagslist">
-	<p class="asidetitle">{{ lang.tags }}</p>
-		<ul class="clearfix">
-		{% for item in site.tags %}
-			{% if item[1] | size != 0 %}
-				<li><a href="{{ site.baseurl }}/tags/#{{ item[0] }}" title="{{ item[0] }}">{{ item[0] }}<sup>{{ item[1] | size }}</sup></a></li>
-			{% endif %}
-		{% endfor %}
-		</ul>
+    <p class="asidetitle">{{ lang.tags }}</p>
+
+    <ul class="clearfix">
+    {% if site.widget_tags_sort_by_count == true %}
+        {% capture tags %}{% for tag in site.tags %}
+            {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
+        {% endfor %}{% endcapture %}
+        {% assign sortedtags = tags | split:' ' | sort %}
+        {% for tag in sortedtags reversed %}{% assign tagitems = tag | split: '#' %}
+            {% if tagitems[2] != '0' %}
+                <li><a href="{{ site.baseurl }}/tags/#{{ tagitems[1] }}" title="{{ tagitems[1] }}">{{ tagitems[1] }}<sup>{{ tagitems[2] }}</sup></a></li>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        {% for item in site.tags %}
+            {% if item[1] | size != 0 %}
+                <li><a href="{{ site.baseurl }}/tags/#{{ item[0] }}" title="{{ item[0] }}">{{ item[0] }}<sup>{{ item[1] | size }}</sup></a></li>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    </ul>
 </div>
 {% endif %}
