@@ -1,5 +1,5 @@
 #### Exclude
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "README_en.md", "Rakefile", "changelog.md"]
 
 #### Code Highlighter
 # 'pygments' is unsupported on GitHub Pages now.
