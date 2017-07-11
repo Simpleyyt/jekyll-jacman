@@ -3,6 +3,6 @@
 title : Sitemap
 ---
 {% for page in site.pages %}
-{{site.ur}}{{site.baseur}}{{ page.url }}{% endfor %}
+{{site.ur}}{{site.baseurl}}{{ page.url }}{% endfor %}
 {% for post in site.posts %}
-{{site.url}}{{site.baseur}}{{ post.url }}{% endfor %}
+{{site.url}}{{site.baseurl}}{{ post.url }}{% endfor %}

@@ -6,10 +6,10 @@ title : Atom Feed
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>{{ site.title | xml_escape }}</title>
- <link href="{{ site.url }}{{site.baseur}}{{ site.rss }}" rel="self"/>
- <link href="{{ site.url }}{{site.baseur}}"/>
+ <link href="{{ site.url }}{{site.baseurl}}{{ site.rss }}" rel="self"/>
+ <link href="{{ site.url }}{{site.baseurl}}"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}{{site.baseur}}</id>
+ <id>{{ site.url }}{{site.baseurl}}</id>
  <author>
    <name>{{ site.author.name | xml_escape }}</name>
    <email>{{ site.author.email }}</email>
@@ -18,9 +18,9 @@ title : Atom Feed
  {% for post in site.posts limit:20 %}
  <entry>
    <title>{{ post.title | xml_escape }}</title>
-   <link href="{{ site.url }}{{site.baseur}}{{ post.url }}"/>
+   <link href="{{ site.url }}{{site.baseurl}}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{site.baseur}}{{ post.id }}</id>
+   <id>{{ site.url }}{{site.baseurl}}{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
