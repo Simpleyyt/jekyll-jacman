@@ -7,7 +7,7 @@ highlighter: rouge
 
 #### Permalink
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title
+permalink: pretty
 
 #### Markdown Processors
 # 'redcarpet' is unsupported on GitHub Pages now.
@@ -165,6 +165,6 @@ tinysou_search:     ## http://tinysou.com/
 simple_jekyll_search:
   enable: true
   fulltext: false
+
 gems:
  - jemoji
-#- jekyll-admin

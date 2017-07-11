@@ -43,19 +43,19 @@
     <link rel="alternative" href="{{ site.rss }}" title="{{ site.title }}" type="application/atom+xml">
     {% endif %}
     {% if site.favicon %}
-    <link rel="icon" href="{{ site.assets }}/{{ site.favicon }}">
+    <link rel="icon" href="{{ site.baseurl }}{{ site.assets }}/{{ site.favicon }}">
     {% endif %}
     {% if site.apple_icon %}
-    <link rel="apple-touch-icon" href="{{ site.assets }}/{{ site.apple_icon }}">
-    <link rel="apple-touch-icon-precomposed" href="{{ site.assets }}/{{ site.apple_icon }}">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}{{ site.assets }}/{{ site.apple_icon }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}{{ site.assets }}/{{ site.apple_icon }}">
     {% endif %}
 
-    <link rel="stylesheet" href="{{ site.assets }}/css/style.css" type="text/css">
-    <link rel="stylesheet" href="{{ site.assets }}/css/highlight.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}{{ site.assets }}/css/style.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}{{ site.assets }}/css/highlight.css" type="text/css">
     {% if site.banner_img %}
     <style>
         body >header {
-            background: url("{{ site.assets }}/{{ site.banner_img }}") center #2ca6cb;
+            background: url("{{ site.baseurl }}{{ site.assets }}/{{ site.banner_img }}") center #2ca6cb;
         }
     </style>
     {% endif %}

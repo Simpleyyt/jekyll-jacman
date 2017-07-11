@@ -1,7 +1,7 @@
 <div>
 		    {% if site.imglogo.enable && site.imglogo.src %}
 			<div id="imglogo">
-				<a href="{{ site.baseurl }}/"><img src="{{ site.assets }}/{{ site.imglogo.src }}" alt="{{ site.title }}" title="{{ site.title }}"/></a>
+				<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ site.assets }}/{{ site.imglogo.src }}" alt="{{ site.title }}" title="{{ site.title }}"/></a>
 			</div>
 			{% endif %}
 			<div id="textlogo">
