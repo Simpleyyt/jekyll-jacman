@@ -30,7 +30,8 @@ paginate: 20
 #### Site
 title : Jekyll Jacman
 tagline: A fresh looking and responsive theme for Jekyll
-assets: /jekyll-jacman/assets
+assets: /assets
+url:
 baseurl: /jekyll-jacman
 
 #### Language
@@ -164,6 +165,6 @@ tinysou_search:     ## http://tinysou.com/
 simple_jekyll_search:
   enable: true
   fulltext: false
+
 gems:
  - jemoji
-#- jekyll-admin
