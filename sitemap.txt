@@ -1,5 +1,4 @@
 ---
-# Remember to set ur in your _config.yml file!
 title : Sitemap
 ---
 {% for page in site.pages %}
