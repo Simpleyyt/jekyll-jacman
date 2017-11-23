@@ -38,24 +38,25 @@
     <meta name="twitter:description" content="page.description">
     <meta name="twitter:creator" content="@{{ site.author.twitter }}">
     <link rel="publisher" href="{{ site.author.google_plus }}">
+    <meta name="theme-color" content="{{ site.colors.primary_dark }}">
 
     {% if site.rss %}
-    <link rel="alternative" href="{{site.baseurl}}{{ site.rss }}" title="{{ site.title }}" type="application/atom+xml">
+    <link rel="alternate" href="{{ site.rss | prepend:site.baseurl }}" title="{{ site.title }}" type="application/atom+xml">
     {% endif %}
     {% if site.favicon %}
-    <link rel="icon" href="{{ site.baseurl }}{{ site.assets }}/{{ site.favicon }}">
+    <link rel="icon" href="{{ site.assets | prepend:site.baseurl }}/{{ site.favicon }}">
     {% endif %}
     {% if site.apple_icon %}
-    <link rel="apple-touch-icon" href="{{ site.baseurl }}{{ site.assets }}/{{ site.apple_icon }}">
-    <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}{{ site.assets }}/{{ site.apple_icon }}">
+    <link rel="apple-touch-icon" href="{{ site.assets | prepend:site.baseurl }}/{{ site.apple_icon }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ site.assets | prepend:site.baseurl }}/{{ site.apple_icon }}">
     {% endif %}
 
-    <link rel="stylesheet" href="{{ site.baseurl }}{{ site.assets }}/css/style.css" type="text/css">
-    <link rel="stylesheet" href="{{ site.baseurl }}{{ site.assets }}/css/highlight.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.assets | prepend:site.baseurl }}/css/main.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.assets | prepend:site.baseurl }}/css/highlight.css" type="text/css">
     {% if site.banner_img %}
     <style>
         body >header {
-            background: url("{{ site.baseurl }}{{ site.assets }}/{{ site.banner_img }}") center #2ca6cb;
+            background: url("{{ site.assets | prepend:site.baseurl }}/{{ site.banner_img }}") center {{ site.colors.primary }};
         }
     </style>
     {% endif %}

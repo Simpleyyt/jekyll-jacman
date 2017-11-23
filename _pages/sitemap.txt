@@ -1,5 +1,6 @@
 ---
 title : Sitemap
+permalin: /sitemap.txt
 ---
 {% for page in site.pages %}
 {{site.ur}}{{site.baseurl}}{{ page.url }}{% endfor %}

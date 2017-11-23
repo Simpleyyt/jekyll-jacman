@@ -1,3 +1,4 @@
+{% assign lang = site.data.languages[site.language] %}
 {% if site.index.expand == true %}
     {% if page.layout == 'photo' and item.photos and item.photos | size != 0 %}
 	    {% include _partial/post/gallery.html %}
@@ -13,7 +14,7 @@
         
         <p class="article-more-link">
           {% if item.excerpt and index and site.index.excerpt_link %}
-            <a href="{{ site.baseurl }}{{ item.url }}#more">{{ site.index.excerpt_link }}</a>
+            <a href="{{ site.baseurl }}{{ item.url }}#more">{{ lang.read_more }}</a>
           {% endif %}
        </p>
     </div>

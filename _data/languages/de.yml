@@ -1,3 +1,4 @@
+# Lines ending with two hashtags are not translated into this language yet
 categories: Kategorien
 search: Suche
 tags: Tags
@@ -18,10 +19,13 @@ menu: Menü
 weibo: Weibo
 links: Links
 rss: RSS
-doubanshow: Douban Show
-github-card: Github Card
+doubanshow: Douban anzeigen
+github-card: GitHub Karte
 showsidebar: Seistenleiste anzeigen
 hidesidebar: Seistenleiste verstecken
 updated: Aktualisiert
 totop: Nach oben
 datepublished: Veröffentlicht
+by: Von
+read_more: Weiterlesen
+print: Drucken

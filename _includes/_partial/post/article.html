@@ -1,6 +1,8 @@
 <div id="main" class="{{ item.layout }}" itemscope itemprop="blogPost">
   {% if page.layout == 'photo' and item.photos and item.photos | size != 0 %}
 	{% include _partial/post/gallery.html %}
+  {% elsif item.image %}
+	{% include _partial/post/gallery.html %}
   {% endif %}
 	<article itemprop="articleBody"> 
 	{% include _partial/post/header.html %}

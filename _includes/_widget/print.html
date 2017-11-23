@@ -1,0 +1,31 @@
+{% assign lang = site.data.languages[site.language] %}
+<style> 
+    .rsspart.print a::before { content: "\f02f"; }· 
+</style>
+
+<script>
+    function hideElement(element) {
+        if (element){
+            element.style.display = 'none';
+        }
+    } ; 
+    function printableView(){
+        hideElement(document.getElementsByTagName("header")[0]);
+        hideElement(document.getElementById("asidepart"));
+        hideElement(document.getElementById("totop"));
+        hideElement(document.getElementsByClassName("prev")[0]);
+        hideElement(document.getElementsByClassName("next")[0]);
+        hideElement(document.getElementsByClassName("article-footer")[0]);
+        hideElement(document.getElementsByClassName("article-tags")[0]);
+        document.getElementsByClassName("article-author")[0].children[0].innerHTML = '{{ site.author.name }}';
+        document.getElementsByClassName("article-author")[0].children[0].href = '{{ site.baseurl }}';
+        document.getElementsByTagName("html")[0].setAttribute("moznomarginboxes", ""); 
+        document.getElementsByTagName("html")[0].setAttribute("mozdisallowselectionprint", "");
+        document.title = document.title.substring(0, document.title.lastIndexOf("|"));
+        window.print();
+    } ; 
+</script>
+
+<div class="rsspart print" style="content: \f02f;" >
+    <a onclick="printableView();" title="print">{{ lang.print }}</a>
+</div>

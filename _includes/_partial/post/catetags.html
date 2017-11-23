@@ -1,5 +1,5 @@
 <div class="article-catetags">
-{% if item.categories and (item.categories | size != 0) %}
+{% if item.categories and (item.categories | size != 0) and item.categories != empty %}
 <div class="article-categories">
   <span></span>
   <!--
@@ -15,7 +15,7 @@
   {% endfor %}
 </div>
 {% endif %}
-{% if item.tags and item.tags | size != 0 %}
+{% if item.tags and item.tags | size != 0 and item.tags != empty %}
   <div class="article-tags">
   <!--
   <% var tags = [];

@@ -157,8 +157,7 @@ $(document).ready(function(){
       myWidth = document.documentElement.clientWidth;
     };
     var qrsize = myWidth > 1024 ? 200:100;
-    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
-    var p = $('.article-share-qrcode').position();
+    var options = var options = {render: 'image', size: qrsize, fill: '{{ site.colors.primary_dark }}', text: url, radius: 0.5, quiet: 1};
     $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
                           .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
                           .qrcode(options);
@@ -250,7 +249,7 @@ $(document).ready(function(){
         var cls = anchor.substr(1);
         $("." + cls).show();
         $(".archive-folder").text(cls);
-    }
+    };
     if (document.location.hash) {
         show_post(document.location.hash);
     }
@@ -265,8 +264,8 @@ $(document).ready(function(){
 {% endif %}
 
 {% if site.fancybox %}
-<link rel="stylesheet" href="{{ site.baseurl }}{{ site.assets }}/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="{{ site.baseurl }}{{ site.assets }}/fancybox/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" href="{{ site.assets | prepend:site.baseurl }}/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="{{ site.assets | prepend:site.baseurl }}/fancybox/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
   $('.article-content').each(function(i){
