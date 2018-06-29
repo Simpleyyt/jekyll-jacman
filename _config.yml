@@ -92,11 +92,11 @@ author:
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
   douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
   zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
-  email:      ## e.g. hauvp_uet@gmail.com
+  email:      hauvp.uet@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
-  github:     ## e.g. wuchong for https://github.com/hauvp
-  facebook:   ## e.g. imjark for https://facebook.com/mister.rainy
-  linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
+  github:     hauvp
+  facebook:   mister.rainy
+  linkedin:   hau-vu
   google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
   stackoverflow:  ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
 ## if you set them, the corresponding  share button will show on the footer
@@ -110,8 +110,8 @@ toc:
 
 #### Links
 links:
-  码农圈: https://coderq.com
-  Jark's Blog: http://wuchong.me
+  Viblo: https://viblo.asia
+  Tôi đi code dạo: https://toidicodedao.com/
 
 #### Comment
 duoshuo_shortname:    ## e.g. wuchong      your duoshuo short name.       website: http://duoshuo.com
