@@ -1,11 +1,11 @@
-categories: Danh mục
+categories: Thể loại
 search: Tìm kiếm
-tags: Thể loại
+tags: Nhãn
 tagcloud: Tag Cloud
 prev: Trước
 next: Kế tiếp
-prev-post: 'Bài viết trước'
-next-post: 'Bài viết tiếp theo'
+prev-post: 'Bài trước:'
+next-post: 'Bài kế tiếp:'
 search-load: Đang tìm kiếm, vui lòng đợi trong giây lát.
 comment: Bình luận
 contents: Nội dung
@@ -19,7 +19,7 @@ weibo: Weibo
 links: Liên kết
 rss: RSS
 doubanshow: Douban Show
-github-card: Github Card
+github-card: Thẻ Github
 showsidebar: Hiện sidebar
 hidesidebar: Ẩn Sidebar
 updated: Đã cập nhật
