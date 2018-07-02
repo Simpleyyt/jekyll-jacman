@@ -29,13 +29,13 @@ paginate: 20
 
 #### Site
 title : Hậu Vũ
-tagline: A little about me, myself, and I.
+tagline: Hãy cười lên không phải vì thượng đế cho bạn lý do để cười, mà còn bởi nụ cười của bạn là lý do để người khác mỉm cười.
 assets: /assets
 url:
 baseurl:
 
 #### Language
-language: en    ## blog site languages: en, zh-CN, zh-TW, de
+language: vi    ## blog site languages: en, zh-CN, zh-TW, de
 
 #### Menu
 menu:
@@ -57,12 +57,12 @@ widgets:
 - links
 - douban
 - github-card
-- rss
+# - rss
 ## provide seven widgets:github-card,category,tag,rss,archive,tagcloud,links,weibo,douban
 
 
 #### RSS
-rss: /atom.xml ## RSS address.
+# rss: /atom.xml ## RSS address.
 
 #### Image
 imglogo:
