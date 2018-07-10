@@ -35,7 +35,7 @@ url:
 baseurl:
 
 #### Language
-language: vi    ## blog site languages: en, zh-CN, zh-TW, de
+language: vi    ## blog site languages: en, vi, de
 
 #### Menu
 menu:
@@ -67,7 +67,7 @@ widgets:
 #### Image
 imglogo:
   enable: true             ## display image logo true/false.
-  src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
+  src: img/hauvu-logo.jpg        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
 favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.
 apple_icon: img/jacman.jpg ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
 author_img: img/author.jpg ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
@@ -97,7 +97,7 @@ author:
   github:     hauvp
   facebook:   mister.rainy
   linkedin:   hau-vu
-  google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
+  google_plus:"112387867300361456412"    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
   stackoverflow:  ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
 ## if you set them, the corresponding  share button will show on the footer
 
