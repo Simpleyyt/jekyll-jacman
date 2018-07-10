@@ -97,7 +97,7 @@ author:
   github:     hauvp
   facebook:   mister.rainy
   linkedin:   hau-vu
-  google_plus:"112387867300361456412"    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
+  google_plus: "112387867300361456412"    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
   stackoverflow:  ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
 ## if you set them, the corresponding  share button will show on the footer
 
