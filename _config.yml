@@ -120,6 +120,15 @@ hypercomments_id:     ## e.g. 91510        your hypercomments widget id.  websit
 yungentie_productkey: ## your netease yungentie product key.              website: https://gentie.163.com
 ## set only one of them
 ## duoshuo will be shutting down on June 1, 2017
+gittalk:
+  enable: false
+  clientID: # youridxyz
+  clientSecret: # yourid123 
+  repo: # yourid.github.io
+  owner: # yourid 
+  admin: # yourid same as owner  
+
+
 
 #### Share button
 jiathis:
