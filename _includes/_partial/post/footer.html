@@ -17,6 +17,9 @@
 	{% if site.duoshuo_shortname %}
 			<span></span>
 		<a href="{{ site.baseurl }}{{ item.url }}#comments" class="ds-thread-count comments-count-link" data-thread-key="{{ item.id }}" data-count-type="comments">&nbsp;</a>
+	{% elsif site.gittalk.enable %}
+	  	<span></span>
+		<a href="{{ site.baseurl }}{{ item.url }}#gittalk-container" class="comments-count-link">Goto comments</a>
 	{% elsif site.disqus_shortname %}
 	  	<span></span>
 		<a href="{{ site.baseurl }}{{ item.url }}#disqus_thread" class="comments-count-link">Comments</a>
