@@ -15,14 +15,14 @@ description: 安装Jekyll、RVM、Gem会遇到些问题，在此记录一下。
 ## Macbook pro安装Jekyll、RVM、Gem。
 
 
-### 1.查看是否安装了gem
+### 查看是否安装了gem
 
 `gem -v`
 查看gem版本，如果装了会显示版本信息。
 <img src="https://wx4.sinaimg.cn/mw690/bc83ecb9gy1glipjhef1qj20vo046q5e.jpg" style="zoom:80%;display:block;margin:auto" alt="" />
 可以通过`gem update --system`命令将gem更新
 
-### 2.通过gem安装jekyll
+### 通过gem安装jekyll
 
 `gem install jekyll`
 <img src="https://wx2.sinaimg.cn/mw690/bc83ecb9gy1glipgid17dj20oo02kabb.jpg" style="zoom:80%;display:block;margin:auto" alt="" />
@@ -32,7 +32,7 @@ description: 安装Jekyll、RVM、Gem会遇到些问题，在此记录一下。
 <div align="center" ><font size="1.5" color="gray">ruby版本不满足安装jekyll</font></div>
 * Ruby版本有问题，需要升级Ruby。
 
-### 3.Ruby升级
+### Ruby升级
 
 1）安装RVM
 `curl -L get.rvm.io | bash -s stable `
@@ -68,14 +68,14 @@ ps:默认的镜像：<a>https://rubygems.org/ </a>记得改回去
 `ruby -v`
 <img src="https://wx3.sinaimg.cn/mw690/bc83ecb9gy1glipgqw44fj20o401yjsg.jpg" style="zoom:80%;display:block;margin:auto" alt="" />
 
-### 4.再次安装jekyll
+### 再次安装jekyll
 
 <img src="https://wx1.sinaimg.cn/mw690/bc83ecb9gy1glipkbw3xjj20lu04w0uu.jpg" style="zoom:80%;display:block;margin:auto" alt="" />
 
 查看版本信息
 <img src="https://wx2.sinaimg.cn/mw690/bc83ecb9gy1glipkf41jnj20ie026gmc.jpg" style="zoom:80%;display:block;margin:auto" alt=""/>
 
-### 5.使用jekyll
+### 使用jekyll
 
 （1）在～目录下，创建博客相关文件，名如myblog
 `jekyll new myblog `
