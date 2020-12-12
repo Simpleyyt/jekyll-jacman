@@ -1,6 +1,6 @@
 # Team-debug's blog
 
-**中文 | [English](/README_en.md)**
+**[中文](/README.md) | English**
 
 # The motivation of this blog
 

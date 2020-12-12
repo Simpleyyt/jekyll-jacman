@@ -1,6 +1,6 @@
 # debug队的博客
 
-**[中文](/README.md) | English**
+**中文 | [English](/README_en.md)**
 
 # The 
 
