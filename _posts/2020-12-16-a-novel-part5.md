@@ -1,3 +1,15 @@
+---
+layout: post
+title: a story part5
+author: Wzh
+tags:
+- novel
+categories: novel
+description: 呃，天马行空，供君一笑。
+---
+
+
+
 ### 比武大赛
 
 #### 决定参赛
